@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="14" passed="14" failed="0" skipped="0">
+<testng-results ignored="0" total="22" passed="14" failed="8" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-09-30T17:28:33 CDT" name="Suite" finished-at="2024-09-30T17:28:51 CDT" duration-ms="17433">
+  <suite started-at="2024-09-30T23:17:49 CDT" name="Suite" finished-at="2024-09-30T23:19:17 CDT" duration-ms="88834">
     <groups>
       <group name="regression">
-        <method signature="GetStartedPageTest.TestGetStartedButton()[pri:1, instance:testCases.GetStartedPageTest@11389053]" name="TestGetStartedButton" class="testCases.GetStartedPageTest"/>
-        <method signature="HomePageTests.clickGetStartedButtonWithoutSignIn(java.lang.String)[pri:1, instance:testCases.HomePageTests@3d6300e8]" name="clickGetStartedButtonWithoutSignIn" class="testCases.HomePageTests"/>
-        <method signature="RegisterPageTest.RegisterNewAccount()[pri:1, instance:testCases.RegisterPageTest@1b822fcc]" name="RegisterNewAccount" class="testCases.RegisterPageTest"/>
-        <method signature="SignInPagetest.checkValidAndInvalidLoginTest(java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:testCases.SignInPagetest@58c540cf]" name="checkValidAndInvalidLoginTest" class="testCases.SignInPagetest"/>
+        <method signature="GetStartedPageTest.TestGetStartedButton()[pri:1, instance:testCases.GetStartedPageTest@2e77b8cf]" name="TestGetStartedButton" class="testCases.GetStartedPageTest"/>
+        <method signature="HomePageTests.clickGetStartedButtonWithoutSignIn(java.lang.String)[pri:1, instance:testCases.HomePageTests@532721fd]" name="clickGetStartedButtonWithoutSignIn" class="testCases.HomePageTests"/>
+        <method signature="RegisterPageTest.RegisterNewAccount()[pri:1, instance:testCases.RegisterPageTest@410954b]" name="RegisterNewAccount" class="testCases.RegisterPageTest"/>
+        <method signature="SignInPagetest.checkValidAndInvalidLoginTest(java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:testCases.SignInPagetest@7927bd9f]" name="checkValidAndInvalidLoginTest" class="testCases.SignInPagetest"/>
       </group> <!-- regression -->
       <group name="smoke">
-        <method signature="GetStartedPageTest.TestGetStartedButton()[pri:1, instance:testCases.GetStartedPageTest@11389053]" name="TestGetStartedButton" class="testCases.GetStartedPageTest"/>
-        <method signature="HomePageTests.clickGetStartedButtonWithoutSignIn(java.lang.String)[pri:1, instance:testCases.HomePageTests@3d6300e8]" name="clickGetStartedButtonWithoutSignIn" class="testCases.HomePageTests"/>
-        <method signature="RegisterPageTest.RegisterNewAccount()[pri:1, instance:testCases.RegisterPageTest@1b822fcc]" name="RegisterNewAccount" class="testCases.RegisterPageTest"/>
+        <method signature="GetStartedPageTest.TestGetStartedButton()[pri:1, instance:testCases.GetStartedPageTest@2e77b8cf]" name="TestGetStartedButton" class="testCases.GetStartedPageTest"/>
+        <method signature="HomePageTests.clickGetStartedButtonWithoutSignIn(java.lang.String)[pri:1, instance:testCases.HomePageTests@532721fd]" name="clickGetStartedButtonWithoutSignIn" class="testCases.HomePageTests"/>
+        <method signature="RegisterPageTest.RegisterNewAccount()[pri:1, instance:testCases.RegisterPageTest@410954b]" name="RegisterNewAccount" class="testCases.RegisterPageTest"/>
       </group> <!-- smoke -->
     </groups>
-    <test started-at="2024-09-30T17:28:33 CDT" name="Test" finished-at="2024-09-30T17:28:51 CDT" duration-ms="17433">
-      <class name="testCases.SignInPagetest">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:testCases.SignInPagetest@58c540cf]" started-at="2024-09-30T17:28:35 CDT" name="setup" finished-at="2024-09-30T17:28:37 CDT" duration-ms="2838" status="PASS">
+    <test started-at="2024-09-30T23:17:49 CDT" name="Test" finished-at="2024-09-30T23:19:17 CDT" duration-ms="88834">
+      <class name="testCases.HomePageTests">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:testCases.HomePageTests@532721fd]" started-at="2024-09-30T23:17:52 CDT" name="setup" finished-at="2024-09-30T23:18:07 CDT" duration-ms="15097" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -29,7 +29,240 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="checkValidAndInvalidLoginTest(java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:testCases.SignInPagetest@58c540cf]" started-at="2024-09-30T17:28:37 CDT" name="checkValidAndInvalidLoginTest" data-provider="LoginData" finished-at="2024-09-30T17:28:39 CDT" duration-ms="1330" status="PASS">
+        <test-method signature="clickGetStartedButtonWithoutSignIn(java.lang.String)[pri:1, instance:testCases.HomePageTests@532721fd]" started-at="2024-09-30T23:18:07 CDT" name="clickGetStartedButtonWithoutSignIn" data-provider="GetStartedTopics" finished-at="2024-09-30T23:18:09 CDT" duration-ms="1352" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[DataStructure]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickGetStartedButtonWithoutSignIn -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testCases.HomePageTests@532721fd]" started-at="2024-09-30T23:18:09 CDT" name="tearDown" finished-at="2024-09-30T23:18:10 CDT" duration-ms="1235" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=clickGetStartedButtonWithoutSignIn status=SUCCESS method=HomePageTests.clickGetStartedButtonWithoutSignIn(java.lang.String)[pri:1, instance:testCases.HomePageTests@532721fd] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:testCases.HomePageTests@532721fd]" started-at="2024-09-30T23:18:10 CDT" name="setup" finished-at="2024-09-30T23:18:17 CDT" duration-ms="6909" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="clickGetStartedButtonWithoutSignIn(java.lang.String)[pri:1, instance:testCases.HomePageTests@532721fd]" started-at="2024-09-30T23:18:17 CDT" name="clickGetStartedButtonWithoutSignIn" data-provider="GetStartedTopics" finished-at="2024-09-30T23:18:18 CDT" duration-ms="1372" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Array]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickGetStartedButtonWithoutSignIn -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testCases.HomePageTests@532721fd]" started-at="2024-09-30T23:18:18 CDT" name="tearDown" finished-at="2024-09-30T23:18:19 CDT" duration-ms="1218" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=clickGetStartedButtonWithoutSignIn status=SUCCESS method=HomePageTests.clickGetStartedButtonWithoutSignIn(java.lang.String)[pri:1, instance:testCases.HomePageTests@532721fd] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:testCases.HomePageTests@532721fd]" started-at="2024-09-30T23:18:19 CDT" name="setup" finished-at="2024-09-30T23:18:25 CDT" duration-ms="5319" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="clickGetStartedButtonWithoutSignIn(java.lang.String)[pri:1, instance:testCases.HomePageTests@532721fd]" started-at="2024-09-30T23:18:25 CDT" name="clickGetStartedButtonWithoutSignIn" data-provider="GetStartedTopics" finished-at="2024-09-30T23:18:26 CDT" duration-ms="1444" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[LinkedList]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickGetStartedButtonWithoutSignIn -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testCases.HomePageTests@532721fd]" started-at="2024-09-30T23:18:26 CDT" name="tearDown" finished-at="2024-09-30T23:18:27 CDT" duration-ms="1262" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=clickGetStartedButtonWithoutSignIn status=SUCCESS method=HomePageTests.clickGetStartedButtonWithoutSignIn(java.lang.String)[pri:1, instance:testCases.HomePageTests@532721fd] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:testCases.HomePageTests@532721fd]" started-at="2024-09-30T23:18:27 CDT" name="setup" finished-at="2024-09-30T23:18:32 CDT" duration-ms="5122" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="clickGetStartedButtonWithoutSignIn(java.lang.String)[pri:1, instance:testCases.HomePageTests@532721fd]" started-at="2024-09-30T23:18:32 CDT" name="clickGetStartedButtonWithoutSignIn" data-provider="GetStartedTopics" finished-at="2024-09-30T23:18:34 CDT" duration-ms="1348" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Stack]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickGetStartedButtonWithoutSignIn -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testCases.HomePageTests@532721fd]" started-at="2024-09-30T23:18:34 CDT" name="tearDown" finished-at="2024-09-30T23:18:35 CDT" duration-ms="1588" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=clickGetStartedButtonWithoutSignIn status=SUCCESS method=HomePageTests.clickGetStartedButtonWithoutSignIn(java.lang.String)[pri:1, instance:testCases.HomePageTests@532721fd] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:testCases.HomePageTests@532721fd]" started-at="2024-09-30T23:18:35 CDT" name="setup" finished-at="2024-09-30T23:19:06 CDT" duration-ms="31036" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="clickGetStartedButtonWithoutSignIn(java.lang.String)[pri:1, instance:testCases.HomePageTests@532721fd]" started-at="2024-09-30T23:19:06 CDT" name="clickGetStartedButtonWithoutSignIn" data-provider="GetStartedTopics" finished-at="2024-09-30T23:19:08 CDT" duration-ms="1318" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Queue]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickGetStartedButtonWithoutSignIn -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testCases.HomePageTests@532721fd]" started-at="2024-09-30T23:19:08 CDT" name="tearDown" finished-at="2024-09-30T23:19:08 CDT" duration-ms="645" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=clickGetStartedButtonWithoutSignIn status=SUCCESS method=HomePageTests.clickGetStartedButtonWithoutSignIn(java.lang.String)[pri:1, instance:testCases.HomePageTests@532721fd] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:testCases.HomePageTests@532721fd]" started-at="2024-09-30T23:19:08 CDT" name="setup" finished-at="2024-09-30T23:19:11 CDT" duration-ms="2903" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="clickGetStartedButtonWithoutSignIn(java.lang.String)[pri:1, instance:testCases.HomePageTests@532721fd]" started-at="2024-09-30T23:19:11 CDT" name="clickGetStartedButtonWithoutSignIn" data-provider="GetStartedTopics" finished-at="2024-09-30T23:19:13 CDT" duration-ms="1463" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Tree]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickGetStartedButtonWithoutSignIn -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testCases.HomePageTests@532721fd]" started-at="2024-09-30T23:19:13 CDT" name="tearDown" finished-at="2024-09-30T23:19:13 CDT" duration-ms="385" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=clickGetStartedButtonWithoutSignIn status=SUCCESS method=HomePageTests.clickGetStartedButtonWithoutSignIn(java.lang.String)[pri:1, instance:testCases.HomePageTests@532721fd] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:testCases.HomePageTests@532721fd]" started-at="2024-09-30T23:19:13 CDT" name="setup" finished-at="2024-09-30T23:19:16 CDT" duration-ms="2728" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="clickGetStartedButtonWithoutSignIn(java.lang.String)[pri:1, instance:testCases.HomePageTests@532721fd]" started-at="2024-09-30T23:19:16 CDT" name="clickGetStartedButtonWithoutSignIn" data-provider="GetStartedTopics" finished-at="2024-09-30T23:19:17 CDT" duration-ms="1134" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Graph]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickGetStartedButtonWithoutSignIn -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testCases.HomePageTests@532721fd]" started-at="2024-09-30T23:19:17 CDT" name="tearDown" finished-at="2024-09-30T23:19:17 CDT" duration-ms="345" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=clickGetStartedButtonWithoutSignIn status=SUCCESS method=HomePageTests.clickGetStartedButtonWithoutSignIn(java.lang.String)[pri:1, instance:testCases.HomePageTests@532721fd] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testCases.HomePageTests -->
+      <class name="testCases.SignInPagetest">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:testCases.SignInPagetest@7927bd9f]" started-at="2024-09-30T23:17:53 CDT" name="setup" finished-at="2024-09-30T23:18:00 CDT" duration-ms="7266" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="checkValidAndInvalidLoginTest(java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:testCases.SignInPagetest@7927bd9f]" started-at="2024-09-30T23:18:00 CDT" name="checkValidAndInvalidLoginTest" data-provider="LoginData" finished-at="2024-09-30T23:18:03 CDT" duration-ms="3448" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -50,18 +283,18 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkValidAndInvalidLoginTest -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testCases.SignInPagetest@58c540cf]" started-at="2024-09-30T17:28:39 CDT" name="tearDown" finished-at="2024-09-30T17:28:39 CDT" duration-ms="199" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testCases.SignInPagetest@7927bd9f]" started-at="2024-09-30T23:18:03 CDT" name="tearDown" finished-at="2024-09-30T23:18:10 CDT" duration-ms="6349" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=checkValidAndInvalidLoginTest status=SUCCESS method=SignInPagetest.checkValidAndInvalidLoginTest(java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:testCases.SignInPagetest@58c540cf] output={null}]]]>
+                <![CDATA[[TestResult name=checkValidAndInvalidLoginTest status=SUCCESS method=SignInPagetest.checkValidAndInvalidLoginTest(java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:testCases.SignInPagetest@7927bd9f] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:testCases.SignInPagetest@58c540cf]" started-at="2024-09-30T17:28:39 CDT" name="setup" finished-at="2024-09-30T17:28:40 CDT" duration-ms="1352" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:testCases.SignInPagetest@7927bd9f]" started-at="2024-09-30T23:18:10 CDT" name="setup" finished-at="2024-09-30T23:18:15 CDT" duration-ms="4813" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -72,7 +305,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="checkValidAndInvalidLoginTest(java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:testCases.SignInPagetest@58c540cf]" started-at="2024-09-30T17:28:40 CDT" name="checkValidAndInvalidLoginTest" data-provider="LoginData" finished-at="2024-09-30T17:28:41 CDT" duration-ms="858" status="PASS">
+        <test-method signature="checkValidAndInvalidLoginTest(java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:testCases.SignInPagetest@7927bd9f]" started-at="2024-09-30T23:18:15 CDT" name="checkValidAndInvalidLoginTest" data-provider="LoginData" finished-at="2024-09-30T23:18:17 CDT" duration-ms="2272" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -93,18 +326,18 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkValidAndInvalidLoginTest -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testCases.SignInPagetest@58c540cf]" started-at="2024-09-30T17:28:41 CDT" name="tearDown" finished-at="2024-09-30T17:28:41 CDT" duration-ms="97" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testCases.SignInPagetest@7927bd9f]" started-at="2024-09-30T23:18:17 CDT" name="tearDown" finished-at="2024-09-30T23:18:18 CDT" duration-ms="1386" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=checkValidAndInvalidLoginTest status=SUCCESS method=SignInPagetest.checkValidAndInvalidLoginTest(java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:testCases.SignInPagetest@58c540cf] output={null}]]]>
+                <![CDATA[[TestResult name=checkValidAndInvalidLoginTest status=SUCCESS method=SignInPagetest.checkValidAndInvalidLoginTest(java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:testCases.SignInPagetest@7927bd9f] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:testCases.SignInPagetest@58c540cf]" started-at="2024-09-30T17:28:41 CDT" name="setup" finished-at="2024-09-30T17:28:43 CDT" duration-ms="1269" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:testCases.SignInPagetest@7927bd9f]" started-at="2024-09-30T23:18:18 CDT" name="setup" finished-at="2024-09-30T23:18:23 CDT" duration-ms="4451" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -115,7 +348,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="checkValidAndInvalidLoginTest(java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:testCases.SignInPagetest@58c540cf]" started-at="2024-09-30T17:28:43 CDT" name="checkValidAndInvalidLoginTest" data-provider="LoginData" finished-at="2024-09-30T17:28:44 CDT" duration-ms="912" status="PASS">
+        <test-method signature="checkValidAndInvalidLoginTest(java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:testCases.SignInPagetest@7927bd9f]" started-at="2024-09-30T23:18:23 CDT" name="checkValidAndInvalidLoginTest" data-provider="LoginData" finished-at="2024-09-30T23:18:25 CDT" duration-ms="2424" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -136,18 +369,18 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkValidAndInvalidLoginTest -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testCases.SignInPagetest@58c540cf]" started-at="2024-09-30T17:28:44 CDT" name="tearDown" finished-at="2024-09-30T17:28:44 CDT" duration-ms="112" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testCases.SignInPagetest@7927bd9f]" started-at="2024-09-30T23:18:25 CDT" name="tearDown" finished-at="2024-09-30T23:18:27 CDT" duration-ms="2069" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=checkValidAndInvalidLoginTest status=SUCCESS method=SignInPagetest.checkValidAndInvalidLoginTest(java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:testCases.SignInPagetest@58c540cf] output={null}]]]>
+                <![CDATA[[TestResult name=checkValidAndInvalidLoginTest status=SUCCESS method=SignInPagetest.checkValidAndInvalidLoginTest(java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:testCases.SignInPagetest@7927bd9f] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:testCases.SignInPagetest@58c540cf]" started-at="2024-09-30T17:28:44 CDT" name="setup" finished-at="2024-09-30T17:28:45 CDT" duration-ms="1253" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:testCases.SignInPagetest@7927bd9f]" started-at="2024-09-30T23:18:27 CDT" name="setup" finished-at="2024-09-30T23:18:33 CDT" duration-ms="6102" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -158,7 +391,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="checkValidAndInvalidLoginTest(java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:testCases.SignInPagetest@58c540cf]" started-at="2024-09-30T17:28:45 CDT" name="checkValidAndInvalidLoginTest" data-provider="LoginData" finished-at="2024-09-30T17:28:46 CDT" duration-ms="913" status="PASS">
+        <test-method signature="checkValidAndInvalidLoginTest(java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:testCases.SignInPagetest@7927bd9f]" started-at="2024-09-30T23:18:33 CDT" name="checkValidAndInvalidLoginTest" data-provider="LoginData" finished-at="2024-09-30T23:18:36 CDT" duration-ms="2737" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -179,18 +412,18 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkValidAndInvalidLoginTest -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testCases.SignInPagetest@58c540cf]" started-at="2024-09-30T17:28:46 CDT" name="tearDown" finished-at="2024-09-30T17:28:46 CDT" duration-ms="112" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testCases.SignInPagetest@7927bd9f]" started-at="2024-09-30T23:18:36 CDT" name="tearDown" finished-at="2024-09-30T23:18:43 CDT" duration-ms="6528" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=checkValidAndInvalidLoginTest status=SUCCESS method=SignInPagetest.checkValidAndInvalidLoginTest(java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:testCases.SignInPagetest@58c540cf] output={null}]]]>
+                <![CDATA[[TestResult name=checkValidAndInvalidLoginTest status=SUCCESS method=SignInPagetest.checkValidAndInvalidLoginTest(java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:testCases.SignInPagetest@7927bd9f] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:testCases.SignInPagetest@58c540cf]" started-at="2024-09-30T17:28:46 CDT" name="setup" finished-at="2024-09-30T17:28:47 CDT" duration-ms="1435" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:testCases.SignInPagetest@7927bd9f]" started-at="2024-09-30T23:18:43 CDT" name="setup" finished-at="2024-09-30T23:18:56 CDT" duration-ms="13209" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -201,7 +434,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="checkValidAndInvalidLoginTest(java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:testCases.SignInPagetest@58c540cf]" started-at="2024-09-30T17:28:47 CDT" name="checkValidAndInvalidLoginTest" data-provider="LoginData" finished-at="2024-09-30T17:28:48 CDT" duration-ms="843" status="PASS">
+        <test-method signature="checkValidAndInvalidLoginTest(java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:testCases.SignInPagetest@7927bd9f]" started-at="2024-09-30T23:18:56 CDT" name="checkValidAndInvalidLoginTest" data-provider="LoginData" finished-at="2024-09-30T23:18:58 CDT" duration-ms="2539" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -222,11 +455,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkValidAndInvalidLoginTest -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testCases.SignInPagetest@58c540cf]" started-at="2024-09-30T17:28:48 CDT" name="tearDown" finished-at="2024-09-30T17:28:48 CDT" duration-ms="116" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testCases.SignInPagetest@7927bd9f]" started-at="2024-09-30T23:18:58 CDT" name="tearDown" finished-at="2024-09-30T23:19:03 CDT" duration-ms="4121" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=checkValidAndInvalidLoginTest status=SUCCESS method=SignInPagetest.checkValidAndInvalidLoginTest(java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:testCases.SignInPagetest@58c540cf] output={null}]]]>
+                <![CDATA[[TestResult name=checkValidAndInvalidLoginTest status=SUCCESS method=SignInPagetest.checkValidAndInvalidLoginTest(java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:testCases.SignInPagetest@7927bd9f] output={null}]]]>
               </value>
             </param>
           </params>
@@ -234,241 +467,290 @@
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- testCases.SignInPagetest -->
-      <class name="testCases.HomePageTests">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:testCases.HomePageTests@3d6300e8]" started-at="2024-09-30T17:28:34 CDT" name="setup" finished-at="2024-09-30T17:28:37 CDT" duration-ms="2633" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
+      <class name="testCases.DS_IntroductionTests">
+        <test-method signature="DS_PythonEditor_WithoutCodes()[pri:0, instance:testCases.DS_IntroductionTests@7fb9f71f]" started-at="2024-09-30T23:17:49 CDT" name="DS_PythonEditor_WithoutCodes" finished-at="2024-09-30T23:17:49 CDT" duration-ms="287" status="FAIL">
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "org.openqa.selenium.SearchContext.findElement(org.openqa.selenium.By)" because "this.searchContext" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.SearchContext.findElement(org.openqa.selenium.By)" because "this.searchContext" is null
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy23.click(Unknown Source)
+at pageObject.GetStartedPage.clickGetStartedSP(GetStartedPage.java:18)
+at pageObject.HomePage.Login_HomePage(HomePage.java:65)
+at testCases.DS_IntroductionTests.DS_PythonEditor_WithoutCodes(DS_IntroductionTests.java:124)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1570)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="clickGetStartedButtonWithoutSignIn(java.lang.String)[pri:1, instance:testCases.HomePageTests@3d6300e8]" started-at="2024-09-30T17:28:37 CDT" name="clickGetStartedButtonWithoutSignIn" data-provider="GetStartedTopics" finished-at="2024-09-30T17:28:38 CDT" duration-ms="969" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[DataStructure]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- DS_PythonEditor_WithoutCodes -->
+        <test-method signature="Test_LeftPanel_TimeComplexity()[pri:0, instance:testCases.DS_IntroductionTests@7fb9f71f]" started-at="2024-09-30T23:17:49 CDT" name="Test_LeftPanel_TimeComplexity" finished-at="2024-09-30T23:17:49 CDT" duration-ms="287" status="FAIL">
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "org.openqa.selenium.SearchContext.findElement(org.openqa.selenium.By)" because "this.searchContext" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.SearchContext.findElement(org.openqa.selenium.By)" because "this.searchContext" is null
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy23.click(Unknown Source)
+at pageObject.GetStartedPage.clickGetStartedSP(GetStartedPage.java:18)
+at pageObject.HomePage.Login_HomePage(HomePage.java:65)
+at testCases.DS_IntroductionTests.Test_LeftPanel_TimeComplexity(DS_IntroductionTests.java:47)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1570)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- clickGetStartedButtonWithoutSignIn -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testCases.HomePageTests@3d6300e8]" started-at="2024-09-30T17:28:38 CDT" name="tearDown" finished-at="2024-09-30T17:28:38 CDT" duration-ms="287" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=clickGetStartedButtonWithoutSignIn status=SUCCESS method=HomePageTests.clickGetStartedButtonWithoutSignIn(java.lang.String)[pri:1, instance:testCases.HomePageTests@3d6300e8] output={null}]]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- Test_LeftPanel_TimeComplexity -->
+        <test-method signature="DS_PythonEditor_InValidCodes()[pri:0, instance:testCases.DS_IntroductionTests@7fb9f71f]" started-at="2024-09-30T23:17:49 CDT" name="DS_PythonEditor_InValidCodes" finished-at="2024-09-30T23:17:49 CDT" duration-ms="287" status="FAIL">
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "org.openqa.selenium.SearchContext.findElement(org.openqa.selenium.By)" because "this.searchContext" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.SearchContext.findElement(org.openqa.selenium.By)" because "this.searchContext" is null
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy23.click(Unknown Source)
+at pageObject.GetStartedPage.clickGetStartedSP(GetStartedPage.java:18)
+at pageObject.HomePage.Login_HomePage(HomePage.java:65)
+at testCases.DS_IntroductionTests.DS_PythonEditor_InValidCodes(DS_IntroductionTests.java:94)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1570)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:testCases.HomePageTests@3d6300e8]" started-at="2024-09-30T17:28:38 CDT" name="setup" finished-at="2024-09-30T17:28:40 CDT" duration-ms="1330" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- DS_PythonEditor_InValidCodes -->
+        <test-method signature="Test_DS_TimeComplexityLink()[pri:0, instance:testCases.DS_IntroductionTests@7fb9f71f]" started-at="2024-09-30T23:17:49 CDT" name="Test_DS_TimeComplexityLink" finished-at="2024-09-30T23:17:49 CDT" duration-ms="287" status="FAIL">
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "org.openqa.selenium.SearchContext.findElement(org.openqa.selenium.By)" because "this.searchContext" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.SearchContext.findElement(org.openqa.selenium.By)" because "this.searchContext" is null
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy23.click(Unknown Source)
+at pageObject.GetStartedPage.clickGetStartedSP(GetStartedPage.java:18)
+at pageObject.HomePage.Login_HomePage(HomePage.java:65)
+at testCases.DS_IntroductionTests.Test_DS_TimeComplexityLink(DS_IntroductionTests.java:18)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1570)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="clickGetStartedButtonWithoutSignIn(java.lang.String)[pri:1, instance:testCases.HomePageTests@3d6300e8]" started-at="2024-09-30T17:28:40 CDT" name="clickGetStartedButtonWithoutSignIn" data-provider="GetStartedTopics" finished-at="2024-09-30T17:28:40 CDT" duration-ms="595" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Array]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- Test_DS_TimeComplexityLink -->
+        <test-method signature="DS_TimeComplexity_SignOutBtn()[pri:0, instance:testCases.DS_IntroductionTests@7fb9f71f]" started-at="2024-09-30T23:17:49 CDT" name="DS_TimeComplexity_SignOutBtn" finished-at="2024-09-30T23:17:49 CDT" duration-ms="287" status="FAIL">
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "org.openqa.selenium.SearchContext.findElement(org.openqa.selenium.By)" because "this.searchContext" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.SearchContext.findElement(org.openqa.selenium.By)" because "this.searchContext" is null
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy23.click(Unknown Source)
+at pageObject.GetStartedPage.clickGetStartedSP(GetStartedPage.java:18)
+at pageObject.HomePage.Login_HomePage(HomePage.java:65)
+at testCases.DS_IntroductionTests.DS_TimeComplexity_SignOutBtn(DS_IntroductionTests.java:109)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1570)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- clickGetStartedButtonWithoutSignIn -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testCases.HomePageTests@3d6300e8]" started-at="2024-09-30T17:28:40 CDT" name="tearDown" finished-at="2024-09-30T17:28:40 CDT" duration-ms="132" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=clickGetStartedButtonWithoutSignIn status=SUCCESS method=HomePageTests.clickGetStartedButtonWithoutSignIn(java.lang.String)[pri:1, instance:testCases.HomePageTests@3d6300e8] output={null}]]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- DS_TimeComplexity_SignOutBtn -->
+        <test-method signature="Test_DS_TimeComplexity_Practice_Questions_link()[pri:1, instance:testCases.DS_IntroductionTests@7fb9f71f]" started-at="2024-09-30T23:17:49 CDT" name="Test_DS_TimeComplexity_Practice_Questions_link" finished-at="2024-09-30T23:17:49 CDT" duration-ms="29" status="FAIL">
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "org.openqa.selenium.SearchContext.findElement(org.openqa.selenium.By)" because "this.searchContext" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.SearchContext.findElement(org.openqa.selenium.By)" because "this.searchContext" is null
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy23.click(Unknown Source)
+at pageObject.GetStartedPage.clickGetStartedSP(GetStartedPage.java:18)
+at pageObject.HomePage.Login_HomePage(HomePage.java:65)
+at testCases.DS_IntroductionTests.Test_DS_TimeComplexity_Practice_Questions_link(DS_IntroductionTests.java:34)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1570)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:testCases.HomePageTests@3d6300e8]" started-at="2024-09-30T17:28:40 CDT" name="setup" finished-at="2024-09-30T17:28:42 CDT" duration-ms="1257" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- Test_DS_TimeComplexity_Practice_Questions_link -->
+        <test-method signature="Test_DS_TryHere()[pri:3, instance:testCases.DS_IntroductionTests@7fb9f71f]" started-at="2024-09-30T23:17:49 CDT" name="Test_DS_TryHere" finished-at="2024-09-30T23:17:49 CDT" duration-ms="37" status="FAIL">
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "org.openqa.selenium.SearchContext.findElement(org.openqa.selenium.By)" because "this.searchContext" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.SearchContext.findElement(org.openqa.selenium.By)" because "this.searchContext" is null
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy23.click(Unknown Source)
+at pageObject.GetStartedPage.clickGetStartedSP(GetStartedPage.java:18)
+at pageObject.HomePage.Login_HomePage(HomePage.java:65)
+at testCases.DS_IntroductionTests.Test_DS_TryHere(DS_IntroductionTests.java:60)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1570)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="clickGetStartedButtonWithoutSignIn(java.lang.String)[pri:1, instance:testCases.HomePageTests@3d6300e8]" started-at="2024-09-30T17:28:42 CDT" name="clickGetStartedButtonWithoutSignIn" data-provider="GetStartedTopics" finished-at="2024-09-30T17:28:42 CDT" duration-ms="627" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[LinkedList]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- Test_DS_TryHere -->
+        <test-method signature="DS_PythonEditor_ValidCodes()[pri:4, instance:testCases.DS_IntroductionTests@7fb9f71f]" started-at="2024-09-30T23:17:49 CDT" name="DS_PythonEditor_ValidCodes" finished-at="2024-09-30T23:17:49 CDT" duration-ms="12" status="FAIL">
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "org.openqa.selenium.SearchContext.findElement(org.openqa.selenium.By)" because "this.searchContext" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.SearchContext.findElement(org.openqa.selenium.By)" because "this.searchContext" is null
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy23.click(Unknown Source)
+at pageObject.GetStartedPage.clickGetStartedSP(GetStartedPage.java:18)
+at pageObject.HomePage.Login_HomePage(HomePage.java:65)
+at testCases.DS_IntroductionTests.DS_PythonEditor_ValidCodes(DS_IntroductionTests.java:73)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1570)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- clickGetStartedButtonWithoutSignIn -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testCases.HomePageTests@3d6300e8]" started-at="2024-09-30T17:28:42 CDT" name="tearDown" finished-at="2024-09-30T17:28:42 CDT" duration-ms="107" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=clickGetStartedButtonWithoutSignIn status=SUCCESS method=HomePageTests.clickGetStartedButtonWithoutSignIn(java.lang.String)[pri:1, instance:testCases.HomePageTests@3d6300e8] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:testCases.HomePageTests@3d6300e8]" started-at="2024-09-30T17:28:42 CDT" name="setup" finished-at="2024-09-30T17:28:44 CDT" duration-ms="1243" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="clickGetStartedButtonWithoutSignIn(java.lang.String)[pri:1, instance:testCases.HomePageTests@3d6300e8]" started-at="2024-09-30T17:28:44 CDT" name="clickGetStartedButtonWithoutSignIn" data-provider="GetStartedTopics" finished-at="2024-09-30T17:28:44 CDT" duration-ms="629" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Stack]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- clickGetStartedButtonWithoutSignIn -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testCases.HomePageTests@3d6300e8]" started-at="2024-09-30T17:28:44 CDT" name="tearDown" finished-at="2024-09-30T17:28:45 CDT" duration-ms="150" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=clickGetStartedButtonWithoutSignIn status=SUCCESS method=HomePageTests.clickGetStartedButtonWithoutSignIn(java.lang.String)[pri:1, instance:testCases.HomePageTests@3d6300e8] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:testCases.HomePageTests@3d6300e8]" started-at="2024-09-30T17:28:45 CDT" name="setup" finished-at="2024-09-30T17:28:46 CDT" duration-ms="1250" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="clickGetStartedButtonWithoutSignIn(java.lang.String)[pri:1, instance:testCases.HomePageTests@3d6300e8]" started-at="2024-09-30T17:28:46 CDT" name="clickGetStartedButtonWithoutSignIn" data-provider="GetStartedTopics" finished-at="2024-09-30T17:28:46 CDT" duration-ms="594" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Queue]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- clickGetStartedButtonWithoutSignIn -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testCases.HomePageTests@3d6300e8]" started-at="2024-09-30T17:28:46 CDT" name="tearDown" finished-at="2024-09-30T17:28:47 CDT" duration-ms="245" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=clickGetStartedButtonWithoutSignIn status=SUCCESS method=HomePageTests.clickGetStartedButtonWithoutSignIn(java.lang.String)[pri:1, instance:testCases.HomePageTests@3d6300e8] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:testCases.HomePageTests@3d6300e8]" started-at="2024-09-30T17:28:47 CDT" name="setup" finished-at="2024-09-30T17:28:48 CDT" duration-ms="1288" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="clickGetStartedButtonWithoutSignIn(java.lang.String)[pri:1, instance:testCases.HomePageTests@3d6300e8]" started-at="2024-09-30T17:28:48 CDT" name="clickGetStartedButtonWithoutSignIn" data-provider="GetStartedTopics" finished-at="2024-09-30T17:28:49 CDT" duration-ms="610" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Tree]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- clickGetStartedButtonWithoutSignIn -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testCases.HomePageTests@3d6300e8]" started-at="2024-09-30T17:28:49 CDT" name="tearDown" finished-at="2024-09-30T17:28:49 CDT" duration-ms="128" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=clickGetStartedButtonWithoutSignIn status=SUCCESS method=HomePageTests.clickGetStartedButtonWithoutSignIn(java.lang.String)[pri:1, instance:testCases.HomePageTests@3d6300e8] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:testCases.HomePageTests@3d6300e8]" started-at="2024-09-30T17:28:49 CDT" name="setup" finished-at="2024-09-30T17:28:50 CDT" duration-ms="1225" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="clickGetStartedButtonWithoutSignIn(java.lang.String)[pri:1, instance:testCases.HomePageTests@3d6300e8]" started-at="2024-09-30T17:28:50 CDT" name="clickGetStartedButtonWithoutSignIn" data-provider="GetStartedTopics" finished-at="2024-09-30T17:28:50 CDT" duration-ms="582" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Graph]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- clickGetStartedButtonWithoutSignIn -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testCases.HomePageTests@3d6300e8]" started-at="2024-09-30T17:28:50 CDT" name="tearDown" finished-at="2024-09-30T17:28:51 CDT" duration-ms="138" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=clickGetStartedButtonWithoutSignIn status=SUCCESS method=HomePageTests.clickGetStartedButtonWithoutSignIn(java.lang.String)[pri:1, instance:testCases.HomePageTests@3d6300e8] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- testCases.HomePageTests -->
+        </test-method> <!-- DS_PythonEditor_ValidCodes -->
+      </class> <!-- testCases.DS_IntroductionTests -->
       <class name="testCases.RegisterPageTest">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:testCases.RegisterPageTest@1b822fcc]" started-at="2024-09-30T17:28:33 CDT" name="setup" finished-at="2024-09-30T17:28:37 CDT" duration-ms="3864" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:testCases.RegisterPageTest@410954b]" started-at="2024-09-30T23:17:49 CDT" name="setup" finished-at="2024-09-30T23:18:00 CDT" duration-ms="10247" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -479,15 +761,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="RegisterNewAccount()[pri:1, instance:testCases.RegisterPageTest@1b822fcc]" started-at="2024-09-30T17:28:37 CDT" name="RegisterNewAccount" finished-at="2024-09-30T17:28:39 CDT" duration-ms="1521" status="PASS">
+        <test-method signature="RegisterNewAccount()[pri:1, instance:testCases.RegisterPageTest@410954b]" started-at="2024-09-30T23:18:00 CDT" name="RegisterNewAccount" finished-at="2024-09-30T23:18:03 CDT" duration-ms="3499" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- RegisterNewAccount -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testCases.RegisterPageTest@1b822fcc]" started-at="2024-09-30T17:28:39 CDT" name="tearDown" finished-at="2024-09-30T17:28:39 CDT" duration-ms="128" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testCases.RegisterPageTest@410954b]" started-at="2024-09-30T23:18:03 CDT" name="tearDown" finished-at="2024-09-30T23:18:10 CDT" duration-ms="6462" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=RegisterNewAccount status=SUCCESS method=RegisterPageTest.RegisterNewAccount()[pri:1, instance:testCases.RegisterPageTest@1b822fcc] output={null}]]]>
+                <![CDATA[[TestResult name=RegisterNewAccount status=SUCCESS method=RegisterPageTest.RegisterNewAccount()[pri:1, instance:testCases.RegisterPageTest@410954b] output={null}]]]>
               </value>
             </param>
           </params>
@@ -496,7 +778,7 @@
         </test-method> <!-- tearDown -->
       </class> <!-- testCases.RegisterPageTest -->
       <class name="testCases.GetStartedPageTest">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:testCases.GetStartedPageTest@11389053]" started-at="2024-09-30T17:28:33 CDT" name="setup" finished-at="2024-09-30T17:28:37 CDT" duration-ms="3715" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:testCases.GetStartedPageTest@2e77b8cf]" started-at="2024-09-30T23:17:49 CDT" name="setup" finished-at="2024-09-30T23:18:04 CDT" duration-ms="15203" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -507,15 +789,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="TestGetStartedButton()[pri:1, instance:testCases.GetStartedPageTest@11389053]" started-at="2024-09-30T17:28:37 CDT" name="TestGetStartedButton" finished-at="2024-09-30T17:28:38 CDT" duration-ms="508" status="PASS">
+        <test-method signature="TestGetStartedButton()[pri:1, instance:testCases.GetStartedPageTest@2e77b8cf]" started-at="2024-09-30T23:18:04 CDT" name="TestGetStartedButton" finished-at="2024-09-30T23:18:05 CDT" duration-ms="880" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TestGetStartedButton -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testCases.GetStartedPageTest@11389053]" started-at="2024-09-30T17:28:38 CDT" name="tearDown" finished-at="2024-09-30T17:28:38 CDT" duration-ms="286" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testCases.GetStartedPageTest@2e77b8cf]" started-at="2024-09-30T23:18:05 CDT" name="tearDown" finished-at="2024-09-30T23:18:09 CDT" duration-ms="3435" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=TestGetStartedButton status=SUCCESS method=GetStartedPageTest.TestGetStartedButton()[pri:1, instance:testCases.GetStartedPageTest@11389053] output={null}]]]>
+                <![CDATA[[TestResult name=TestGetStartedButton status=SUCCESS method=GetStartedPageTest.TestGetStartedButton()[pri:1, instance:testCases.GetStartedPageTest@2e77b8cf] output={null}]]]>
               </value>
             </param>
           </params>

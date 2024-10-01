@@ -1,13 +1,15 @@
 package pageObject;
 
-//import java.io.IOException;
+import java.io.IOException;
 import java.util.Properties;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
-//import factory.BaseClass;
+import factory.BaseClass;
+
+
 
 public class HomePage extends BasePage{
 	
@@ -55,6 +57,31 @@ public class HomePage extends BasePage{
 			
 			@FindBy (xpath="//div[contains(text(),'New Account Created.')]")
 			private WebElement NewAccCreatedMsg;
+			
+			public void Login_HomePage() 
+			{
+				SignInPage sp = new SignInPage(BaseClass.getDriver());	
+				GetStartedPage Gp = new GetStartedPage(BaseClass.getDriver());
+				Gp.clickGetStartedSP();
+				clickSigIn();
+
+				try {
+					sp.enterUsername(BaseClass.getProperties().getProperty("username"));
+				} catch (IOException e) {
+					
+					e.printStackTrace();
+				}
+				try {
+					sp.enterpassword(BaseClass.getProperties().getProperty("password"));
+				} catch (IOException e) {
+					
+					e.printStackTrace();
+				}		
+
+				 sp.clickLogin();	 
+
+
+			}
 			
 			public boolean NotLoggedInErrorMsg() {
 				boolean status = NotLoggedInErrMsg.isDisplayed();
@@ -122,4 +149,5 @@ public class HomePage extends BasePage{
 				default: System.out.println("Unable to find this topic....");break;		
 				}
 			}
+			
 }

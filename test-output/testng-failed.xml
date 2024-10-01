@@ -4,20 +4,18 @@
   <test thread-count="5" parallel="methods" name="Test(failed)">
     <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="testCases.SignInPagetest">
+      <class name="testCases.DS_IntroductionTests">
         <methods>
-          <include name="tearDown"/>
-          <include name="checkValidAndInvalidLoginTest"/>
-          <include name="setup"/>
+          <include name="Test_DS_TimeComplexity_Practice_Questions_link"/>
+          <include name="Test_DS_TryHere"/>
+          <include name="Test_DS_TimeComplexityLink"/>
+          <include name="Test_LeftPanel_TimeComplexity"/>
+          <include name="DS_PythonEditor_InValidCodes"/>
+          <include name="DS_PythonEditor_ValidCodes"/>
+          <include name="DS_TimeComplexity_SignOutBtn"/>
+          <include name="DS_PythonEditor_WithoutCodes"/>
         </methods>
-      </class> <!-- testCases.SignInPagetest -->
-      <class name="testCases.HomePageTests">
-        <methods>
-          <include name="tearDown"/>
-          <include name="clickGetStartedButtonWithoutSignIn"/>
-          <include name="setup"/>
-        </methods>
-      </class> <!-- testCases.HomePageTests -->
+      </class> <!-- testCases.DS_IntroductionTests -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
