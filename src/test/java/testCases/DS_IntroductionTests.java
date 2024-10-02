@@ -40,6 +40,9 @@ public class DS_IntroductionTests extends BaseClass{
 		
 	}
 	
+	
+	
+	
 	@Test
 	void Test_LeftPanel_TimeComplexity() 
 	{
@@ -52,7 +55,8 @@ public class DS_IntroductionTests extends BaseClass{
 		String CurrentURL =BaseClass.getDriver().getCurrentUrl();
 		Assert.assertEquals(true, CurrentURL.contains("time"));
 	}	
-
+	
+	
 	@Test  (priority=3)
 	void Test_DS_TryHere() 
 	{
@@ -65,6 +69,8 @@ public class DS_IntroductionTests extends BaseClass{
         String CurURL= BaseClass.getDriver().getCurrentUrl();	    
 	    Assert.assertEquals(true, CurURL.contains("tryEditor"));
 	}
+	
+	
 	
 	@Test  (priority=4)
 	void DS_PythonEditor_ValidCodes() 
@@ -128,5 +134,6 @@ public class DS_IntroductionTests extends BaseClass{
 		  String crntURL = BaseClass.getDriver().getCurrentUrl();
 		  Assert.assertEquals(true, crntURL.contains("tryEditor"));
 	}
+	
 	
 }

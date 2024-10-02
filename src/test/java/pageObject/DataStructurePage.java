@@ -16,11 +16,14 @@ public class DataStructurePage extends BasePage  {
 		
 	}
 
+
 	WebDriver driver;
 	public String PYEditor_Code = "'Numpy Ninja'";	
 	public String ConsoleOutput_text="";
 	public String Alertmesg ="";
+		
 	
+	//-------------WebElements--------------
 	
 	@FindBy (xpath="//*[text()='Data Structures-Introduction']//following::a[1]")
 	private WebElement DS_Introduction_GetStartedBtn;
@@ -64,8 +67,9 @@ public class DataStructurePage extends BasePage  {
 	
 	@FindBy (id = "output")
 	WebElement ConsoleOutPut;
-
 	
+	//-----------Methods---------
+		
 	
 	public void click_GetStartedBtn_DSIroduction()
 	{
@@ -99,7 +103,9 @@ public class DataStructurePage extends BasePage  {
 		action.moveToElement(RunBtn).click().perform();		
 	
 	}
-
+	
+		
+	// Python Editor ->  Without Codes
 	public void Click_DS_PythonEditor_Runbtn_WithoutCodes()
 	{
 		
@@ -111,7 +117,7 @@ public class DataStructurePage extends BasePage  {
 	}
 	
 	
-	 
+	  // Python Editor -> Entering Valid Codes 
 	public void Click_DS_PythonEditor_Runbtn_ValidCodes()		
 	
 	{	  		
@@ -125,6 +131,7 @@ public class DataStructurePage extends BasePage  {
 	
 	
 	
+	 // Python Editor -> Entering In-Valid Codes 
 	public void Click_DS_PythonEditor_Runbtn_InValidCodes()
 	{
 		
@@ -136,7 +143,9 @@ public class DataStructurePage extends BasePage  {
 		
 	}
 	
-		
+	
+	// Python Editor -> Console OUTPUT -> For Valid Codes
+	
 	public void validate_Console_Output()
 	{				
 		//WebElement result=BaseClass.getDriver().findElement(By.xpath("//*[@id='output']"));		
@@ -145,7 +154,7 @@ public class DataStructurePage extends BasePage  {
         
 	}
 	
-	
+	// Python Editor -> Invalid Codes Validation (Alert Message)
 	public void Validate_OutputConsole_InvalidCodes()
 	{
 		Alert alert = BaseClass.getDriver().switchTo().alert();		
@@ -159,7 +168,7 @@ public class DataStructurePage extends BasePage  {
 		DS_TimeComplexity_LeftPanel.click();
 	}
 	
-
+	// Navigating to the PY_Editor Page
 	
 	public void DS_Pyhton_Editor_Page()
 	{
@@ -169,6 +178,7 @@ public class DataStructurePage extends BasePage  {
 	}
 	
 	
+	// Clicking Sign out Button
 	
 	public void click_Signout_Btn()
 	{
@@ -182,5 +192,4 @@ public class DataStructurePage extends BasePage  {
 		return status;
 	}
 	
-
 }

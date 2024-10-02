@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>14/8/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>51/15/0</td>
 </tr><tr>
-<td>Started on:</td><td>Mon Sep 30 23:17:49 CDT 2024</td>
+<td>Started on:</td><td>Tue Oct 01 16:35:10 CDT 2024</td>
 </tr>
-<tr><td>Total time:</td><td>88 seconds (88834 ms)</td>
+<tr><td>Total time:</td><td>191 seconds (191947 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,27 +76,17 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='testCases.DS_IntroductionTests.Test_DS_TimeComplexity_Practice_Questions_link()'><b>Test_DS_TimeComplexity_Practice_Questions_link</b><br>Test class: testCases.DS_IntroductionTests</td>
-<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.SearchContext.findElement(org.openqa.selenium.By)&quot; because &quot;this.searchContext&quot; is null
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy23.click(Unknown Source)
-	at pageObject.GetStartedPage.clickGetStartedSP(GetStartedPage.java:18)
-	at pageObject.HomePage.Login_HomePage(HomePage.java:65)
-	at testCases.DS_IntroductionTests.Test_DS_TimeComplexity_Practice_Questions_link(DS_IntroductionTests.java:34)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-	at java.base/java.lang.Thread.run(Thread.java:1570)
-... Removed 11 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace782498306", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace782498306'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.SearchContext.findElement(org.openqa.selenium.By)&quot; because &quot;this.searchContext&quot; is null
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy23.click(Unknown Source)
-	at pageObject.GetStartedPage.clickGetStartedSP(GetStartedPage.java:18)
-	at pageObject.HomePage.Login_HomePage(HomePage.java:65)
-	at testCases.DS_IntroductionTests.Test_DS_TimeComplexity_Practice_Questions_link(DS_IntroductionTests.java:34)
+<td title='testCases.SignInPagetest.checkUsernameDisplayAfterLogin()'><b>checkUsernameDisplayAfterLogin</b><br>Test class: testCases.SignInPagetest</td>
+<td><div><pre>java.lang.AssertionError: expected [true] but found [false]
+	at testCases.SignInPagetest.checkUsernameDisplayAfterLogin(SignInPagetest.java:96)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1031581596", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1031581596'><pre>java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at org.testng.Assert.assertTrue(Assert.java:67)
+	at testCases.SignInPagetest.checkUsernameDisplayAfterLogin(SignInPagetest.java:96)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -107,200 +97,42 @@ function toggleAllBoxes() {
 	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
 	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
 	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-	at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-	at java.base/java.lang.Thread.run(Thread.java:1570)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 </pre></div></td>
-<td>0</td>
-<td>testCases.DS_IntroductionTests@7fb9f71f</td></tr>
-<tr>
-<td title='testCases.DS_IntroductionTests.DS_PythonEditor_WithoutCodes()'><b>DS_PythonEditor_WithoutCodes</b><br>Test class: testCases.DS_IntroductionTests</td>
-<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.SearchContext.findElement(org.openqa.selenium.By)&quot; because &quot;this.searchContext&quot; is null
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy23.click(Unknown Source)
-	at pageObject.GetStartedPage.clickGetStartedSP(GetStartedPage.java:18)
-	at pageObject.HomePage.Login_HomePage(HomePage.java:65)
-	at testCases.DS_IntroductionTests.DS_PythonEditor_WithoutCodes(DS_IntroductionTests.java:124)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-	at java.base/java.lang.Thread.run(Thread.java:1570)
-... Removed 11 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1217472", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1217472'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.SearchContext.findElement(org.openqa.selenium.By)&quot; because &quot;this.searchContext&quot; is null
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy23.click(Unknown Source)
-	at pageObject.GetStartedPage.clickGetStartedSP(GetStartedPage.java:18)
-	at pageObject.HomePage.Login_HomePage(HomePage.java:65)
-	at testCases.DS_IntroductionTests.DS_PythonEditor_WithoutCodes(DS_IntroductionTests.java:124)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-	at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-	at java.base/java.lang.Thread.run(Thread.java:1570)
-</pre></div></td>
-<td>0</td>
-<td>testCases.DS_IntroductionTests@7fb9f71f</td></tr>
-<tr>
-<td title='testCases.DS_IntroductionTests.DS_PythonEditor_ValidCodes()'><b>DS_PythonEditor_ValidCodes</b><br>Test class: testCases.DS_IntroductionTests</td>
-<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.SearchContext.findElement(org.openqa.selenium.By)&quot; because &quot;this.searchContext&quot; is null
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy23.click(Unknown Source)
-	at pageObject.GetStartedPage.clickGetStartedSP(GetStartedPage.java:18)
-	at pageObject.HomePage.Login_HomePage(HomePage.java:65)
-	at testCases.DS_IntroductionTests.DS_PythonEditor_ValidCodes(DS_IntroductionTests.java:73)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-	at java.base/java.lang.Thread.run(Thread.java:1570)
-... Removed 11 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1435260302", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1435260302'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.SearchContext.findElement(org.openqa.selenium.By)&quot; because &quot;this.searchContext&quot; is null
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy23.click(Unknown Source)
-	at pageObject.GetStartedPage.clickGetStartedSP(GetStartedPage.java:18)
-	at pageObject.HomePage.Login_HomePage(HomePage.java:65)
-	at testCases.DS_IntroductionTests.DS_PythonEditor_ValidCodes(DS_IntroductionTests.java:73)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-	at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-	at java.base/java.lang.Thread.run(Thread.java:1570)
-</pre></div></td>
-<td>0</td>
-<td>testCases.DS_IntroductionTests@7fb9f71f</td></tr>
-<tr>
-<td title='testCases.DS_IntroductionTests.Test_LeftPanel_TimeComplexity()'><b>Test_LeftPanel_TimeComplexity</b><br>Test class: testCases.DS_IntroductionTests</td>
-<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.SearchContext.findElement(org.openqa.selenium.By)&quot; because &quot;this.searchContext&quot; is null
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy23.click(Unknown Source)
-	at pageObject.GetStartedPage.clickGetStartedSP(GetStartedPage.java:18)
-	at pageObject.HomePage.Login_HomePage(HomePage.java:65)
-	at testCases.DS_IntroductionTests.Test_LeftPanel_TimeComplexity(DS_IntroductionTests.java:47)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-	at java.base/java.lang.Thread.run(Thread.java:1570)
-... Removed 11 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace332831891", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace332831891'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.SearchContext.findElement(org.openqa.selenium.By)&quot; because &quot;this.searchContext&quot; is null
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy23.click(Unknown Source)
-	at pageObject.GetStartedPage.clickGetStartedSP(GetStartedPage.java:18)
-	at pageObject.HomePage.Login_HomePage(HomePage.java:65)
-	at testCases.DS_IntroductionTests.Test_LeftPanel_TimeComplexity(DS_IntroductionTests.java:47)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-	at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-	at java.base/java.lang.Thread.run(Thread.java:1570)
-</pre></div></td>
-<td>0</td>
-<td>testCases.DS_IntroductionTests@7fb9f71f</td></tr>
-<tr>
-<td title='testCases.DS_IntroductionTests.DS_PythonEditor_InValidCodes()'><b>DS_PythonEditor_InValidCodes</b><br>Test class: testCases.DS_IntroductionTests</td>
-<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.SearchContext.findElement(org.openqa.selenium.By)&quot; because &quot;this.searchContext&quot; is null
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy23.click(Unknown Source)
-	at pageObject.GetStartedPage.clickGetStartedSP(GetStartedPage.java:18)
-	at pageObject.HomePage.Login_HomePage(HomePage.java:65)
-	at testCases.DS_IntroductionTests.DS_PythonEditor_InValidCodes(DS_IntroductionTests.java:94)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-	at java.base/java.lang.Thread.run(Thread.java:1570)
-... Removed 11 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1126720877", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1126720877'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.SearchContext.findElement(org.openqa.selenium.By)&quot; because &quot;this.searchContext&quot; is null
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy23.click(Unknown Source)
-	at pageObject.GetStartedPage.clickGetStartedSP(GetStartedPage.java:18)
-	at pageObject.HomePage.Login_HomePage(HomePage.java:65)
-	at testCases.DS_IntroductionTests.DS_PythonEditor_InValidCodes(DS_IntroductionTests.java:94)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-	at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-	at java.base/java.lang.Thread.run(Thread.java:1570)
-</pre></div></td>
-<td>0</td>
-<td>testCases.DS_IntroductionTests@7fb9f71f</td></tr>
+<td>1</td>
+<td>testCases.SignInPagetest@245a26e1</td></tr>
 <tr>
 <td title='testCases.DS_IntroductionTests.Test_DS_TimeComplexityLink()'><b>Test_DS_TimeComplexityLink</b><br>Test class: testCases.DS_IntroductionTests</td>
 <td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.SearchContext.findElement(org.openqa.selenium.By)&quot; because &quot;this.searchContext&quot; is null
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy23.click(Unknown Source)
-	at pageObject.GetStartedPage.clickGetStartedSP(GetStartedPage.java:18)
-	at pageObject.HomePage.Login_HomePage(HomePage.java:65)
+	at jdk.proxy2/jdk.proxy2.$Proxy22.click(Unknown Source)
+	at pageObject.GetStartedPage.clickGetStartedSP(GetStartedPage.java:25)
+	at pageObject.HomePage.Login_HomePage(HomePage.java:120)
 	at testCases.DS_IntroductionTests.Test_DS_TimeComplexityLink(DS_IntroductionTests.java:18)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-	at java.base/java.lang.Thread.run(Thread.java:1570)
-... Removed 11 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1461210990", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1461210990'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.SearchContext.findElement(org.openqa.selenium.By)&quot; because &quot;this.searchContext&quot; is null
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1776486598", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1776486598'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.SearchContext.findElement(org.openqa.selenium.By)&quot; because &quot;this.searchContext&quot; is null
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy23.click(Unknown Source)
-	at pageObject.GetStartedPage.clickGetStartedSP(GetStartedPage.java:18)
-	at pageObject.HomePage.Login_HomePage(HomePage.java:65)
+	at jdk.proxy2/jdk.proxy2.$Proxy22.click(Unknown Source)
+	at pageObject.GetStartedPage.clickGetStartedSP(GetStartedPage.java:25)
+	at pageObject.HomePage.Login_HomePage(HomePage.java:120)
 	at testCases.DS_IntroductionTests.Test_DS_TimeComplexityLink(DS_IntroductionTests.java:18)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
@@ -312,37 +144,300 @@ function toggleAllBoxes() {
 	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
 	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
 	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-	at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-	at java.base/java.lang.Thread.run(Thread.java:1570)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 </pre></div></td>
 <td>0</td>
-<td>testCases.DS_IntroductionTests@7fb9f71f</td></tr>
+<td>testCases.DS_IntroductionTests@5b800468</td></tr>
+<tr>
+<td title='testCases.DS_IntroductionTests.Test_DS_TryHere()'><b>Test_DS_TryHere</b><br>Test class: testCases.DS_IntroductionTests</td>
+<td><div><pre>org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: &apos;4.20.0&apos;, revision: &apos;866c76ca80&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;22&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, findElement {value=//button[normalize-space()=&apos;Get Started&apos;], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 129.0.6668.60, chrome: {chromedriverVersion: 129.0.6668.70 (df87d5cf12b1..., userDataDir: C:\Users\rushi\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58447}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58447/devtoo..., se:cdpVersion: 129.0.6668.60, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:151)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+	at org.openqa.selenium.support.ThreadGuard$WebDriverInvocationHandler.invokeUnderlying(ThreadGuard.java:99)
+	at org.openqa.selenium.support.ThreadGuard$WebDriverInvocationHandler.invoke(ThreadGuard.java:91)
+	at jdk.proxy2/jdk.proxy2.$Proxy25.findElement(Unknown Source)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy22.click(Unknown Source)
+	at pageObject.GetStartedPage.clickGetStartedSP(GetStartedPage.java:25)
+	at pageObject.HomePage.Login_HomePage(HomePage.java:120)
+	at testCases.DS_IntroductionTests.Test_DS_TryHere(DS_IntroductionTests.java:64)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace190569982", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace190569982'><pre>org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: &apos;4.20.0&apos;, revision: &apos;866c76ca80&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;22&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, findElement {value=//button[normalize-space()=&apos;Get Started&apos;], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 129.0.6668.60, chrome: {chromedriverVersion: 129.0.6668.70 (df87d5cf12b1..., userDataDir: C:\Users\rushi\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58447}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58447/devtoo..., se:cdpVersion: 129.0.6668.60, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:151)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.openqa.selenium.support.ThreadGuard$WebDriverInvocationHandler.invokeUnderlying(ThreadGuard.java:99)
+	at org.openqa.selenium.support.ThreadGuard$WebDriverInvocationHandler.invoke(ThreadGuard.java:91)
+	at jdk.proxy2/jdk.proxy2.$Proxy25.findElement(Unknown Source)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy22.click(Unknown Source)
+	at pageObject.GetStartedPage.clickGetStartedSP(GetStartedPage.java:25)
+	at pageObject.HomePage.Login_HomePage(HomePage.java:120)
+	at testCases.DS_IntroductionTests.Test_DS_TryHere(DS_IntroductionTests.java:64)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>testCases.DS_IntroductionTests@5b800468</td></tr>
+<tr>
+<td title='testCases.RegisterPageTest.checkRegisterWithImproperPassword()'><b>checkRegisterWithImproperPassword</b><br>Test class: testCases.RegisterPageTest<br>Parameters: Testing, existingUser@143, existingUser@143, NotpwdMismatch</td>
+<td><div><pre>java.lang.AssertionError: expected [true] but found [false]
+	at testCases.RegisterPageTest.checkRegisterWithImproperPassword(RegisterPageTest.java:119)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace697269002", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace697269002'><pre>java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at org.testng.Assert.assertTrue(Assert.java:67)
+	at testCases.RegisterPageTest.checkRegisterWithImproperPassword(RegisterPageTest.java:119)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>1</td>
+<td>testCases.RegisterPageTest@466cf502</td></tr>
+<tr>
+<td title='testCases.HomePageTests.clickNumpyNinjaLinkFromHomePagesAfterSignIn()'><b>clickNumpyNinjaLinkFromHomePagesAfterSignIn</b><br>Test class: testCases.HomePageTests</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//p[normalize-space()=&apos;Copyright@NumpyNinja2021&apos;]&quot;}
+  (Session info: chrome=129.0.6668.60)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.20.0&apos;, revision: &apos;866c76ca80&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;22&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [1096fef6ac4ad18d7d0634b9a2603655, findElement {value=//p[normalize-space()=&apos;Copyright@NumpyNinja2021&apos;], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 129.0.6668.60, chrome: {chromedriverVersion: 129.0.6668.70 (df87d5cf12b1..., userDataDir: C:\Users\rushi\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58981}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58981/devtoo..., se:cdpVersion: 129.0.6668.60, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 1096fef6ac4ad18d7d0634b9a2603655
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+	at org.openqa.selenium.support.ThreadGuard$WebDriverInvocationHandler.invokeUnderlying(ThreadGuard.java:99)
+	at org.openqa.selenium.support.ThreadGuard$WebDriverInvocationHandler.invoke(ThreadGuard.java:91)
+	at jdk.proxy2/jdk.proxy2.$Proxy25.findElement(Unknown Source)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy22.isDisplayed(Unknown Source)
+	at pageObject.GetStartedPage.checkStartPageDisplay(GetStartedPage.java:34)
+	at testCases.HomePageTests.clickNumpyNinjaLinkFromHomePagesAfterSignIn(HomePageTests.java:101)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1865880464", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1865880464'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//p[normalize-space()=&apos;Copyright@NumpyNinja2021&apos;]&quot;}
+  (Session info: chrome=129.0.6668.60)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.20.0&apos;, revision: &apos;866c76ca80&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;22&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [1096fef6ac4ad18d7d0634b9a2603655, findElement {value=//p[normalize-space()=&apos;Copyright@NumpyNinja2021&apos;], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 129.0.6668.60, chrome: {chromedriverVersion: 129.0.6668.70 (df87d5cf12b1..., userDataDir: C:\Users\rushi\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58981}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58981/devtoo..., se:cdpVersion: 129.0.6668.60, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 1096fef6ac4ad18d7d0634b9a2603655
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.openqa.selenium.support.ThreadGuard$WebDriverInvocationHandler.invokeUnderlying(ThreadGuard.java:99)
+	at org.openqa.selenium.support.ThreadGuard$WebDriverInvocationHandler.invoke(ThreadGuard.java:91)
+	at jdk.proxy2/jdk.proxy2.$Proxy25.findElement(Unknown Source)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy22.isDisplayed(Unknown Source)
+	at pageObject.GetStartedPage.checkStartPageDisplay(GetStartedPage.java:34)
+	at testCases.HomePageTests.clickNumpyNinjaLinkFromHomePagesAfterSignIn(HomePageTests.java:101)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>11</td>
+<td>testCases.HomePageTests@4d63b624</td></tr>
+<tr>
+<td title='testCases.RegisterPageTest.checkRegisterWithImproperPassword()'><b>checkRegisterWithImproperPassword</b><br>Test class: testCases.RegisterPageTest<br>Parameters: commomPassword, Password123, Password123, NotpwdMismatch</td>
+<td><div><pre>java.lang.AssertionError: expected [true] but found [false]
+	at testCases.RegisterPageTest.checkRegisterWithImproperPassword(RegisterPageTest.java:119)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace89272219", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace89272219'><pre>java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at org.testng.Assert.assertTrue(Assert.java:67)
+	at testCases.RegisterPageTest.checkRegisterWithImproperPassword(RegisterPageTest.java:119)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>1</td>
+<td>testCases.RegisterPageTest@466cf502</td></tr>
 <tr>
 <td title='testCases.DS_IntroductionTests.DS_TimeComplexity_SignOutBtn()'><b>DS_TimeComplexity_SignOutBtn</b><br>Test class: testCases.DS_IntroductionTests</td>
 <td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.SearchContext.findElement(org.openqa.selenium.By)&quot; because &quot;this.searchContext&quot; is null
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy23.click(Unknown Source)
-	at pageObject.GetStartedPage.clickGetStartedSP(GetStartedPage.java:18)
-	at pageObject.HomePage.Login_HomePage(HomePage.java:65)
-	at testCases.DS_IntroductionTests.DS_TimeComplexity_SignOutBtn(DS_IntroductionTests.java:109)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-	at java.base/java.lang.Thread.run(Thread.java:1570)
-... Removed 11 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace925480865", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace925480865'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.SearchContext.findElement(org.openqa.selenium.By)&quot; because &quot;this.searchContext&quot; is null
+	at jdk.proxy2/jdk.proxy2.$Proxy22.click(Unknown Source)
+	at pageObject.GetStartedPage.clickGetStartedSP(GetStartedPage.java:25)
+	at pageObject.HomePage.Login_HomePage(HomePage.java:120)
+	at testCases.DS_IntroductionTests.DS_TimeComplexity_SignOutBtn(DS_IntroductionTests.java:115)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1414744767", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1414744767'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.SearchContext.findElement(org.openqa.selenium.By)&quot; because &quot;this.searchContext&quot; is null
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy23.click(Unknown Source)
-	at pageObject.GetStartedPage.clickGetStartedSP(GetStartedPage.java:18)
-	at pageObject.HomePage.Login_HomePage(HomePage.java:65)
-	at testCases.DS_IntroductionTests.DS_TimeComplexity_SignOutBtn(DS_IntroductionTests.java:109)
+	at jdk.proxy2/jdk.proxy2.$Proxy22.click(Unknown Source)
+	at pageObject.GetStartedPage.clickGetStartedSP(GetStartedPage.java:25)
+	at pageObject.HomePage.Login_HomePage(HomePage.java:120)
+	at testCases.DS_IntroductionTests.DS_TimeComplexity_SignOutBtn(DS_IntroductionTests.java:115)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -353,37 +448,43 @@ function toggleAllBoxes() {
 	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
 	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
 	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-	at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-	at java.base/java.lang.Thread.run(Thread.java:1570)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 </pre></div></td>
 <td>0</td>
-<td>testCases.DS_IntroductionTests@7fb9f71f</td></tr>
+<td>testCases.DS_IntroductionTests@5b800468</td></tr>
 <tr>
-<td title='testCases.DS_IntroductionTests.Test_DS_TryHere()'><b>Test_DS_TryHere</b><br>Test class: testCases.DS_IntroductionTests</td>
+<td title='testCases.DS_IntroductionTests.Test_LeftPanel_TimeComplexity()'><b>Test_LeftPanel_TimeComplexity</b><br>Test class: testCases.DS_IntroductionTests</td>
 <td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.SearchContext.findElement(org.openqa.selenium.By)&quot; because &quot;this.searchContext&quot; is null
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy23.click(Unknown Source)
-	at pageObject.GetStartedPage.clickGetStartedSP(GetStartedPage.java:18)
-	at pageObject.HomePage.Login_HomePage(HomePage.java:65)
-	at testCases.DS_IntroductionTests.Test_DS_TryHere(DS_IntroductionTests.java:60)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-	at java.base/java.lang.Thread.run(Thread.java:1570)
-... Removed 11 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1799966948", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1799966948'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.SearchContext.findElement(org.openqa.selenium.By)&quot; because &quot;this.searchContext&quot; is null
+	at jdk.proxy2/jdk.proxy2.$Proxy22.click(Unknown Source)
+	at pageObject.GetStartedPage.clickGetStartedSP(GetStartedPage.java:25)
+	at pageObject.HomePage.Login_HomePage(HomePage.java:120)
+	at testCases.DS_IntroductionTests.Test_LeftPanel_TimeComplexity(DS_IntroductionTests.java:50)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1719547057", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1719547057'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.SearchContext.findElement(org.openqa.selenium.By)&quot; because &quot;this.searchContext&quot; is null
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy23.click(Unknown Source)
-	at pageObject.GetStartedPage.clickGetStartedSP(GetStartedPage.java:18)
-	at pageObject.HomePage.Login_HomePage(HomePage.java:65)
-	at testCases.DS_IntroductionTests.Test_DS_TryHere(DS_IntroductionTests.java:60)
+	at jdk.proxy2/jdk.proxy2.$Proxy22.click(Unknown Source)
+	at pageObject.GetStartedPage.clickGetStartedSP(GetStartedPage.java:25)
+	at pageObject.HomePage.Login_HomePage(HomePage.java:120)
+	at testCases.DS_IntroductionTests.Test_LeftPanel_TimeComplexity(DS_IntroductionTests.java:50)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -394,15 +495,457 @@ function toggleAllBoxes() {
 	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
 	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
 	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-	at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-	at java.base/java.lang.Thread.run(Thread.java:1570)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 </pre></div></td>
 <td>0</td>
-<td>testCases.DS_IntroductionTests@7fb9f71f</td></tr>
+<td>testCases.DS_IntroductionTests@5b800468</td></tr>
+<tr>
+<td title='testCases.HomePageTests.clickNumpyNinjaLinkFromHomePagesBeforeSignIn()'><b>clickNumpyNinjaLinkFromHomePagesBeforeSignIn</b><br>Test class: testCases.HomePageTests</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//p[normalize-space()=&apos;Copyright@NumpyNinja2021&apos;]&quot;}
+  (Session info: chrome=129.0.6668.60)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.20.0&apos;, revision: &apos;866c76ca80&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;22&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [be9e2eaba9dfed6dd3411a1c3b0d76a4, findElement {value=//p[normalize-space()=&apos;Copyright@NumpyNinja2021&apos;], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 129.0.6668.60, chrome: {chromedriverVersion: 129.0.6668.70 (df87d5cf12b1..., userDataDir: C:\Users\rushi\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58956}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58956/devtoo..., se:cdpVersion: 129.0.6668.60, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: be9e2eaba9dfed6dd3411a1c3b0d76a4
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+	at org.openqa.selenium.support.ThreadGuard$WebDriverInvocationHandler.invokeUnderlying(ThreadGuard.java:99)
+	at org.openqa.selenium.support.ThreadGuard$WebDriverInvocationHandler.invoke(ThreadGuard.java:91)
+	at jdk.proxy2/jdk.proxy2.$Proxy25.findElement(Unknown Source)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy22.isDisplayed(Unknown Source)
+	at pageObject.GetStartedPage.copyrightDisplay(GetStartedPage.java:29)
+	at testCases.HomePageTests.clickNumpyNinjaLinkFromHomePagesBeforeSignIn(HomePageTests.java:89)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace427415062", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace427415062'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//p[normalize-space()=&apos;Copyright@NumpyNinja2021&apos;]&quot;}
+  (Session info: chrome=129.0.6668.60)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.20.0&apos;, revision: &apos;866c76ca80&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;22&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [be9e2eaba9dfed6dd3411a1c3b0d76a4, findElement {value=//p[normalize-space()=&apos;Copyright@NumpyNinja2021&apos;], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 129.0.6668.60, chrome: {chromedriverVersion: 129.0.6668.70 (df87d5cf12b1..., userDataDir: C:\Users\rushi\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58956}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58956/devtoo..., se:cdpVersion: 129.0.6668.60, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: be9e2eaba9dfed6dd3411a1c3b0d76a4
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.openqa.selenium.support.ThreadGuard$WebDriverInvocationHandler.invokeUnderlying(ThreadGuard.java:99)
+	at org.openqa.selenium.support.ThreadGuard$WebDriverInvocationHandler.invoke(ThreadGuard.java:91)
+	at jdk.proxy2/jdk.proxy2.$Proxy25.findElement(Unknown Source)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy22.isDisplayed(Unknown Source)
+	at pageObject.GetStartedPage.copyrightDisplay(GetStartedPage.java:29)
+	at testCases.HomePageTests.clickNumpyNinjaLinkFromHomePagesBeforeSignIn(HomePageTests.java:89)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>10</td>
+<td>testCases.HomePageTests@4d63b624</td></tr>
+<tr>
+<td title='testCases.RegisterPageTest.checkRegisterWithImproperPassword()'><b>checkRegisterWithImproperPassword</b><br>Test class: testCases.RegisterPageTest<br>Parameters: LessCharPassword, trial45, trial45, NotpwdMismatch</td>
+<td><div><pre>java.lang.AssertionError: expected [true] but found [false]
+	at testCases.RegisterPageTest.checkRegisterWithImproperPassword(RegisterPageTest.java:119)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace212874080", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace212874080'><pre>java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at org.testng.Assert.assertTrue(Assert.java:67)
+	at testCases.RegisterPageTest.checkRegisterWithImproperPassword(RegisterPageTest.java:119)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>1</td>
+<td>testCases.RegisterPageTest@466cf502</td></tr>
+<tr>
+<td title='testCases.DS_IntroductionTests.DS_PythonEditor_ValidCodes()'><b>DS_PythonEditor_ValidCodes</b><br>Test class: testCases.DS_IntroductionTests</td>
+<td><div><pre>org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: &apos;4.20.0&apos;, revision: &apos;866c76ca80&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;22&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, findElement {value=//button[normalize-space()=&apos;Get Started&apos;], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 129.0.6668.60, chrome: {chromedriverVersion: 129.0.6668.70 (df87d5cf12b1..., userDataDir: C:\Users\rushi\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58639}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58639/devtoo..., se:cdpVersion: 129.0.6668.60, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:151)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+	at org.openqa.selenium.support.ThreadGuard$WebDriverInvocationHandler.invokeUnderlying(ThreadGuard.java:99)
+	at org.openqa.selenium.support.ThreadGuard$WebDriverInvocationHandler.invoke(ThreadGuard.java:91)
+	at jdk.proxy2/jdk.proxy2.$Proxy25.findElement(Unknown Source)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy22.click(Unknown Source)
+	at pageObject.GetStartedPage.clickGetStartedSP(GetStartedPage.java:25)
+	at pageObject.HomePage.Login_HomePage(HomePage.java:120)
+	at testCases.DS_IntroductionTests.DS_PythonEditor_ValidCodes(DS_IntroductionTests.java:79)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace607657546", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace607657546'><pre>org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: &apos;4.20.0&apos;, revision: &apos;866c76ca80&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;22&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, findElement {value=//button[normalize-space()=&apos;Get Started&apos;], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 129.0.6668.60, chrome: {chromedriverVersion: 129.0.6668.70 (df87d5cf12b1..., userDataDir: C:\Users\rushi\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58639}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58639/devtoo..., se:cdpVersion: 129.0.6668.60, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:151)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.openqa.selenium.support.ThreadGuard$WebDriverInvocationHandler.invokeUnderlying(ThreadGuard.java:99)
+	at org.openqa.selenium.support.ThreadGuard$WebDriverInvocationHandler.invoke(ThreadGuard.java:91)
+	at jdk.proxy2/jdk.proxy2.$Proxy25.findElement(Unknown Source)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy22.click(Unknown Source)
+	at pageObject.GetStartedPage.clickGetStartedSP(GetStartedPage.java:25)
+	at pageObject.HomePage.Login_HomePage(HomePage.java:120)
+	at testCases.DS_IntroductionTests.DS_PythonEditor_ValidCodes(DS_IntroductionTests.java:79)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>testCases.DS_IntroductionTests@5b800468</td></tr>
+<tr>
+<td title='testCases.DS_IntroductionTests.DS_PythonEditor_WithoutCodes()'><b>DS_PythonEditor_WithoutCodes</b><br>Test class: testCases.DS_IntroductionTests</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.SearchContext.findElement(org.openqa.selenium.By)&quot; because &quot;this.searchContext&quot; is null
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy22.click(Unknown Source)
+	at pageObject.GetStartedPage.clickGetStartedSP(GetStartedPage.java:25)
+	at pageObject.HomePage.Login_HomePage(HomePage.java:120)
+	at testCases.DS_IntroductionTests.DS_PythonEditor_WithoutCodes(DS_IntroductionTests.java:130)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1898751355", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1898751355'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.SearchContext.findElement(org.openqa.selenium.By)&quot; because &quot;this.searchContext&quot; is null
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy22.click(Unknown Source)
+	at pageObject.GetStartedPage.clickGetStartedSP(GetStartedPage.java:25)
+	at pageObject.HomePage.Login_HomePage(HomePage.java:120)
+	at testCases.DS_IntroductionTests.DS_PythonEditor_WithoutCodes(DS_IntroductionTests.java:130)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>testCases.DS_IntroductionTests@5b800468</td></tr>
+<tr>
+<td title='testCases.RegisterPageTest.checkRegisterWithImproperPassword()'><b>checkRegisterWithImproperPassword</b><br>Test class: testCases.RegisterPageTest<br>Parameters: entireNumbers, 12345678, 12345678, NotpwdMismatch</td>
+<td><div><pre>java.lang.AssertionError: expected [true] but found [false]
+	at testCases.RegisterPageTest.checkRegisterWithImproperPassword(RegisterPageTest.java:119)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1107296920", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1107296920'><pre>java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at org.testng.Assert.assertTrue(Assert.java:67)
+	at testCases.RegisterPageTest.checkRegisterWithImproperPassword(RegisterPageTest.java:119)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>1</td>
+<td>testCases.RegisterPageTest@466cf502</td></tr>
+<tr>
+<td title='testCases.DS_IntroductionTests.Test_DS_TimeComplexity_Practice_Questions_link()'><b>Test_DS_TimeComplexity_Practice_Questions_link</b><br>Test class: testCases.DS_IntroductionTests</td>
+<td><div><pre>org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: &apos;4.20.0&apos;, revision: &apos;866c76ca80&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;22&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, findElement {value=//button[normalize-space()=&apos;Get Started&apos;], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 129.0.6668.60, chrome: {chromedriverVersion: 129.0.6668.70 (df87d5cf12b1..., userDataDir: C:\Users\rushi\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57981}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57981/devtoo..., se:cdpVersion: 129.0.6668.60, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:151)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+	at org.openqa.selenium.support.ThreadGuard$WebDriverInvocationHandler.invokeUnderlying(ThreadGuard.java:99)
+	at org.openqa.selenium.support.ThreadGuard$WebDriverInvocationHandler.invoke(ThreadGuard.java:91)
+	at jdk.proxy2/jdk.proxy2.$Proxy25.findElement(Unknown Source)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy22.click(Unknown Source)
+	at pageObject.GetStartedPage.clickGetStartedSP(GetStartedPage.java:25)
+	at pageObject.HomePage.Login_HomePage(HomePage.java:120)
+	at testCases.DS_IntroductionTests.Test_DS_TimeComplexity_Practice_Questions_link(DS_IntroductionTests.java:34)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace3027538", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace3027538'><pre>org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: &apos;4.20.0&apos;, revision: &apos;866c76ca80&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;22&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, findElement {value=//button[normalize-space()=&apos;Get Started&apos;], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 129.0.6668.60, chrome: {chromedriverVersion: 129.0.6668.70 (df87d5cf12b1..., userDataDir: C:\Users\rushi\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57981}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57981/devtoo..., se:cdpVersion: 129.0.6668.60, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:151)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.openqa.selenium.support.ThreadGuard$WebDriverInvocationHandler.invokeUnderlying(ThreadGuard.java:99)
+	at org.openqa.selenium.support.ThreadGuard$WebDriverInvocationHandler.invoke(ThreadGuard.java:91)
+	at jdk.proxy2/jdk.proxy2.$Proxy25.findElement(Unknown Source)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy22.click(Unknown Source)
+	at pageObject.GetStartedPage.clickGetStartedSP(GetStartedPage.java:25)
+	at pageObject.HomePage.Login_HomePage(HomePage.java:120)
+	at testCases.DS_IntroductionTests.Test_DS_TimeComplexity_Practice_Questions_link(DS_IntroductionTests.java:34)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>testCases.DS_IntroductionTests@5b800468</td></tr>
+<tr>
+<td title='testCases.DS_IntroductionTests.DS_PythonEditor_InValidCodes()'><b>DS_PythonEditor_InValidCodes</b><br>Test class: testCases.DS_IntroductionTests</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.SearchContext.findElement(org.openqa.selenium.By)&quot; because &quot;this.searchContext&quot; is null
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy22.click(Unknown Source)
+	at pageObject.GetStartedPage.clickGetStartedSP(GetStartedPage.java:25)
+	at pageObject.HomePage.Login_HomePage(HomePage.java:120)
+	at testCases.DS_IntroductionTests.DS_PythonEditor_InValidCodes(DS_IntroductionTests.java:100)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1243495105", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1243495105'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.SearchContext.findElement(org.openqa.selenium.By)&quot; because &quot;this.searchContext&quot; is null
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy22.click(Unknown Source)
+	at pageObject.GetStartedPage.clickGetStartedSP(GetStartedPage.java:25)
+	at pageObject.HomePage.Login_HomePage(HomePage.java:120)
+	at testCases.DS_IntroductionTests.DS_PythonEditor_InValidCodes(DS_IntroductionTests.java:100)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>testCases.DS_IntroductionTests@5b800468</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -413,75 +956,260 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='testCases.SignInPagetest.checkValidAndInvalidLoginTest()'><b>checkValidAndInvalidLoginTest</b><br>Test class: testCases.SignInPagetest<br>Parameters: numnin, aj@234, Invalid</td>
+<td title='testCases.HomePageTests.clickGetStartedButtonAfterSignIn()'><b>clickGetStartedButtonAfterSignIn</b><br>Test class: testCases.HomePageTests<br>Parameters: Graph</td>
 <td></td>
-<td>2</td>
-<td>testCases.SignInPagetest@7927bd9f</td></tr>
+<td>1</td>
+<td>testCases.HomePageTests@4d63b624</td></tr>
 <tr>
-<td title='testCases.SignInPagetest.checkValidAndInvalidLoginTest()'><b>checkValidAndInvalidLoginTest</b><br>Test class: testCases.SignInPagetest<br>Parameters: numpy, ninja, Invalid</td>
+<td title='testCases.HomePageTests.clickGetStartedButtonAfterSignIn()'><b>clickGetStartedButtonAfterSignIn</b><br>Test class: testCases.HomePageTests<br>Parameters: DataStructure</td>
 <td></td>
-<td>2</td>
-<td>testCases.SignInPagetest@7927bd9f</td></tr>
+<td>1</td>
+<td>testCases.HomePageTests@4d63b624</td></tr>
+<tr>
+<td title='testCases.HomePageTests.clickNumpyNinjaLinkFromTopicPagesAfterSignIn()'><b>clickNumpyNinjaLinkFromTopicPagesAfterSignIn</b><br>Test class: testCases.HomePageTests<br>Parameters: Stack</td>
+<td></td>
+<td>1</td>
+<td>testCases.HomePageTests@4d63b624</td></tr>
+<tr>
+<td title='testCases.HomePageTests.selectDataStructureDropdownTopicAfterSignIn()'><b>selectDataStructureDropdownTopicAfterSignIn</b><br>Test class: testCases.HomePageTests<br>Parameters: Array</td>
+<td></td>
+<td>1</td>
+<td>testCases.HomePageTests@4d63b624</td></tr>
+<tr>
+<td title='testCases.HomePageTests.clickNumpyNinjaLinkFromTopicPagesAfterSignIn()'><b>clickNumpyNinjaLinkFromTopicPagesAfterSignIn</b><br>Test class: testCases.HomePageTests<br>Parameters: LinkedList</td>
+<td></td>
+<td>1</td>
+<td>testCases.HomePageTests@4d63b624</td></tr>
+<tr>
+<td title='testCases.HomePageTests.clickGetStartedButtonAfterSignIn()'><b>clickGetStartedButtonAfterSignIn</b><br>Test class: testCases.HomePageTests<br>Parameters: LinkedList</td>
+<td></td>
+<td>1</td>
+<td>testCases.HomePageTests@4d63b624</td></tr>
+<tr>
+<td title='testCases.HomePageTests.clickGetStartedButtonAfterSignIn()'><b>clickGetStartedButtonAfterSignIn</b><br>Test class: testCases.HomePageTests<br>Parameters: Tree</td>
+<td></td>
+<td>1</td>
+<td>testCases.HomePageTests@4d63b624</td></tr>
+<tr>
+<td title='testCases.HomePageTests.clickGetStartedButtonAfterSignIn()'><b>clickGetStartedButtonAfterSignIn</b><br>Test class: testCases.HomePageTests<br>Parameters: Stack</td>
+<td></td>
+<td>1</td>
+<td>testCases.HomePageTests@4d63b624</td></tr>
+<tr>
+<td title='testCases.HomePageTests.selectDataStructureDropdownTopicAfterSignIn()'><b>selectDataStructureDropdownTopicAfterSignIn</b><br>Test class: testCases.HomePageTests<br>Parameters: Queue</td>
+<td></td>
+<td>1</td>
+<td>testCases.HomePageTests@4d63b624</td></tr>
+<tr>
+<td title='testCases.SignInPagetest.checkValidAndInvalidLoginTest()'><b>checkValidAndInvalidLoginTest</b><br>Test class: testCases.SignInPagetest<br>Parameters: userninja, ninja, Invalid</td>
+<td></td>
+<td>1</td>
+<td>testCases.SignInPagetest@245a26e1</td></tr>
+<tr>
+<td title='testCases.SignInPagetest.testLoginWithoutUsername()'><b>testLoginWithoutUsername</b><br>Test class: testCases.SignInPagetest<br>Parameters: TestPro, </td>
+<td></td>
+<td>0</td>
+<td>testCases.SignInPagetest@245a26e1</td></tr>
+<tr>
+<td title='testCases.HomePageTests.selectDataStructureDropdownTopicAfterSignIn()'><b>selectDataStructureDropdownTopicAfterSignIn</b><br>Test class: testCases.HomePageTests<br>Parameters: Graph</td>
+<td></td>
+<td>1</td>
+<td>testCases.HomePageTests@4d63b624</td></tr>
+<tr>
+<td title='testCases.HomePageTests.clickGetStartedButtonAfterSignIn()'><b>clickGetStartedButtonAfterSignIn</b><br>Test class: testCases.HomePageTests<br>Parameters: Array</td>
+<td></td>
+<td>1</td>
+<td>testCases.HomePageTests@4d63b624</td></tr>
+<tr>
+<td title='testCases.HomePageTests.clickGetStartedButtonWithoutSignIn()'><b>clickGetStartedButtonWithoutSignIn</b><br>Test class: testCases.HomePageTests<br>Parameters: Array</td>
+<td></td>
+<td>0</td>
+<td>testCases.HomePageTests@4d63b624</td></tr>
+<tr>
+<td title='testCases.HomePageTests.selectDataStructureDropdownTopicAfterSignIn()'><b>selectDataStructureDropdownTopicAfterSignIn</b><br>Test class: testCases.HomePageTests<br>Parameters: Stack</td>
+<td></td>
+<td>1</td>
+<td>testCases.HomePageTests@4d63b624</td></tr>
+<tr>
+<td title='testCases.HomePageTests.clickGetStartedButtonWithoutSignIn()'><b>clickGetStartedButtonWithoutSignIn</b><br>Test class: testCases.HomePageTests<br>Parameters: Queue</td>
+<td></td>
+<td>0</td>
+<td>testCases.HomePageTests@4d63b624</td></tr>
+<tr>
+<td title='testCases.RegisterPageTest.checkMovingToLoginPageFromRegisterPage()'><b>checkMovingToLoginPageFromRegisterPage</b><br>Test class: testCases.RegisterPageTest</td>
+<td></td>
+<td>0</td>
+<td>testCases.RegisterPageTest@466cf502</td></tr>
+<tr>
+<td title='testCases.RegisterPageTest.RegisterNewUserWithExistingPwd()'><b>RegisterNewUserWithExistingPwd</b><br>Test class: testCases.RegisterPageTest</td>
+<td></td>
+<td>1</td>
+<td>testCases.RegisterPageTest@466cf502</td></tr>
+<tr>
+<td title='testCases.HomePageTests.clickNumpyNinjaLinkFromTopicPagesAfterSignIn()'><b>clickNumpyNinjaLinkFromTopicPagesAfterSignIn</b><br>Test class: testCases.HomePageTests<br>Parameters: DataStructure</td>
+<td></td>
+<td>1</td>
+<td>testCases.HomePageTests@4d63b624</td></tr>
+<tr>
+<td title='testCases.SignInPagetest.checkValidAndInvalidLoginTest()'><b>checkValidAndInvalidLoginTest</b><br>Test class: testCases.SignInPagetest<br>Parameters: ninja, num, Invalid</td>
+<td></td>
+<td>1</td>
+<td>testCases.SignInPagetest@245a26e1</td></tr>
+<tr>
+<td title='testCases.SignInPagetest.testLoginWithoutUsername()'><b>testLoginWithoutUsername</b><br>Test class: testCases.SignInPagetest<br>Parameters: , </td>
+<td></td>
+<td>0</td>
+<td>testCases.SignInPagetest@245a26e1</td></tr>
+<tr>
+<td title='testCases.SignInPagetest.checkValidAndInvalidLoginTest()'><b>checkValidAndInvalidLoginTest</b><br>Test class: testCases.SignInPagetest<br>Parameters: ninjan, password, Invalid</td>
+<td></td>
+<td>1</td>
+<td>testCases.SignInPagetest@245a26e1</td></tr>
+<tr>
+<td title='testCases.HomePageTests.clickGetStartedButtonWithoutSignIn()'><b>clickGetStartedButtonWithoutSignIn</b><br>Test class: testCases.HomePageTests<br>Parameters: Graph</td>
+<td></td>
+<td>0</td>
+<td>testCases.HomePageTests@4d63b624</td></tr>
+<tr>
+<td title='testCases.SignInPagetest.checkValidAndInvalidLoginTest()'><b>checkValidAndInvalidLoginTest</b><br>Test class: testCases.SignInPagetest<br>Parameters: numpy, Pass, Invalid</td>
+<td></td>
+<td>1</td>
+<td>testCases.SignInPagetest@245a26e1</td></tr>
 <tr>
 <td title='testCases.HomePageTests.clickGetStartedButtonWithoutSignIn()'><b>clickGetStartedButtonWithoutSignIn</b><br>Test class: testCases.HomePageTests<br>Parameters: DataStructure</td>
 <td></td>
-<td>1</td>
-<td>testCases.HomePageTests@532721fd</td></tr>
+<td>0</td>
+<td>testCases.HomePageTests@4d63b624</td></tr>
 <tr>
-<td title='testCases.SignInPagetest.checkValidAndInvalidLoginTest()'><b>checkValidAndInvalidLoginTest</b><br>Test class: testCases.SignInPagetest<br>Parameters: ninja, Password, Invalid</td>
+<td title='testCases.HomePageTests.selectDataStructureDropdownTopicWithoutSignIn()'><b>selectDataStructureDropdownTopicWithoutSignIn</b><br>Test class: testCases.HomePageTests<br>Parameters: Tree</td>
 <td></td>
-<td>2</td>
-<td>testCases.SignInPagetest@7927bd9f</td></tr>
+<td>0</td>
+<td>testCases.HomePageTests@4d63b624</td></tr>
 <tr>
-<td title='testCases.HomePageTests.clickGetStartedButtonWithoutSignIn()'><b>clickGetStartedButtonWithoutSignIn</b><br>Test class: testCases.HomePageTests<br>Parameters: Tree</td>
+<td title='testCases.SignInPagetest.checkMovingToRegisterPageFromLoginPage()'><b>checkMovingToRegisterPageFromLoginPage</b><br>Test class: testCases.SignInPagetest</td>
+<td></td>
+<td>0</td>
+<td>testCases.SignInPagetest@245a26e1</td></tr>
+<tr>
+<td title='testCases.HomePageTests.selectDataStructureDropdownTopicWithoutSignIn()'><b>selectDataStructureDropdownTopicWithoutSignIn</b><br>Test class: testCases.HomePageTests<br>Parameters: Array</td>
+<td></td>
+<td>0</td>
+<td>testCases.HomePageTests@4d63b624</td></tr>
+<tr>
+<td title='testCases.HomePageTests.selectDataStructureDropdownTopicAfterSignIn()'><b>selectDataStructureDropdownTopicAfterSignIn</b><br>Test class: testCases.HomePageTests<br>Parameters: LinkedList</td>
 <td></td>
 <td>1</td>
-<td>testCases.HomePageTests@532721fd</td></tr>
+<td>testCases.HomePageTests@4d63b624</td></tr>
+<tr>
+<td title='testCases.GetStartedPageTest.CopyrightNumpyNinja2021Display()'><b>CopyrightNumpyNinja2021Display</b><br>Test class: testCases.GetStartedPageTest</td>
+<td></td>
+<td>0</td>
+<td>testCases.GetStartedPageTest@578524c3</td></tr>
 <tr>
 <td title='testCases.HomePageTests.clickGetStartedButtonWithoutSignIn()'><b>clickGetStartedButtonWithoutSignIn</b><br>Test class: testCases.HomePageTests<br>Parameters: Stack</td>
 <td></td>
+<td>0</td>
+<td>testCases.HomePageTests@4d63b624</td></tr>
+<tr>
+<td title='testCases.RegisterPageTest.RegisterNewAccount()'><b>RegisterNewAccount</b><br>Test class: testCases.RegisterPageTest</td>
+<td></td>
 <td>1</td>
-<td>testCases.HomePageTests@532721fd</td></tr>
+<td>testCases.RegisterPageTest@466cf502</td></tr>
+<tr>
+<td title='testCases.HomePageTests.clickNumpyNinjaLinkFromTopicPagesAfterSignIn()'><b>clickNumpyNinjaLinkFromTopicPagesAfterSignIn</b><br>Test class: testCases.HomePageTests<br>Parameters: Array</td>
+<td></td>
+<td>1</td>
+<td>testCases.HomePageTests@4d63b624</td></tr>
+<tr>
+<td title='testCases.HomePageTests.clickGetStartedButtonAfterSignIn()'><b>clickGetStartedButtonAfterSignIn</b><br>Test class: testCases.HomePageTests<br>Parameters: Queue</td>
+<td></td>
+<td>1</td>
+<td>testCases.HomePageTests@4d63b624</td></tr>
+<tr>
+<td title='testCases.HomePageTests.clickGetStartedButtonWithoutSignIn()'><b>clickGetStartedButtonWithoutSignIn</b><br>Test class: testCases.HomePageTests<br>Parameters: Tree</td>
+<td></td>
+<td>0</td>
+<td>testCases.HomePageTests@4d63b624</td></tr>
+<tr>
+<td title='testCases.HomePageTests.clickNumpyNinjaLinkFromTopicPagesAfterSignIn()'><b>clickNumpyNinjaLinkFromTopicPagesAfterSignIn</b><br>Test class: testCases.HomePageTests<br>Parameters: Queue</td>
+<td></td>
+<td>1</td>
+<td>testCases.HomePageTests@4d63b624</td></tr>
+<tr>
+<td title='testCases.SignInPagetest.checkValidAndInvalidLoginTest()'><b>checkValidAndInvalidLoginTest</b><br>Test class: testCases.SignInPagetest<br>Parameters: TestPro, ajm@123$, Valid</td>
+<td></td>
+<td>1</td>
+<td>testCases.SignInPagetest@245a26e1</td></tr>
+<tr>
+<td title='testCases.HomePageTests.clickNumpyNinjaLinkFromRegisterPage()'><b>clickNumpyNinjaLinkFromRegisterPage</b><br>Test class: testCases.HomePageTests</td>
+<td></td>
+<td>0</td>
+<td>testCases.HomePageTests@4d63b624</td></tr>
+<tr>
+<td title='testCases.HomePageTests.selectDataStructureDropdownTopicWithoutSignIn()'><b>selectDataStructureDropdownTopicWithoutSignIn</b><br>Test class: testCases.HomePageTests<br>Parameters: LinkedList</td>
+<td></td>
+<td>0</td>
+<td>testCases.HomePageTests@4d63b624</td></tr>
+<tr>
+<td title='testCases.HomePageTests.selectDataStructureDropdownTopicAfterSignIn()'><b>selectDataStructureDropdownTopicAfterSignIn</b><br>Test class: testCases.HomePageTests<br>Parameters: Tree</td>
+<td></td>
+<td>1</td>
+<td>testCases.HomePageTests@4d63b624</td></tr>
+<tr>
+<td title='testCases.SignInPagetest.testLoginWithoutUsername()'><b>testLoginWithoutUsername</b><br>Test class: testCases.SignInPagetest<br>Parameters: , ajm@123$</td>
+<td></td>
+<td>0</td>
+<td>testCases.SignInPagetest@245a26e1</td></tr>
+<tr>
+<td title='testCases.HomePageTests.clickNumpyNinjaLinkFromTopicPagesAfterSignIn()'><b>clickNumpyNinjaLinkFromTopicPagesAfterSignIn</b><br>Test class: testCases.HomePageTests<br>Parameters: Graph</td>
+<td></td>
+<td>1</td>
+<td>testCases.HomePageTests@4d63b624</td></tr>
+<tr>
+<td title='testCases.HomePageTests.selectDataStructureDropdownTopicWithoutSignIn()'><b>selectDataStructureDropdownTopicWithoutSignIn</b><br>Test class: testCases.HomePageTests<br>Parameters: Stack</td>
+<td></td>
+<td>0</td>
+<td>testCases.HomePageTests@4d63b624</td></tr>
+<tr>
+<td title='testCases.HomePageTests.selectDataStructureDropdownTopicWithoutSignIn()'><b>selectDataStructureDropdownTopicWithoutSignIn</b><br>Test class: testCases.HomePageTests<br>Parameters: Queue</td>
+<td></td>
+<td>0</td>
+<td>testCases.HomePageTests@4d63b624</td></tr>
 <tr>
 <td title='testCases.GetStartedPageTest.TestGetStartedButton()'><b>TestGetStartedButton</b><br>Test class: testCases.GetStartedPageTest</td>
 <td></td>
 <td>0</td>
-<td>testCases.GetStartedPageTest@2e77b8cf</td></tr>
+<td>testCases.GetStartedPageTest@578524c3</td></tr>
 <tr>
-<td title='testCases.RegisterPageTest.RegisterNewAccount()'><b>RegisterNewAccount</b><br>Test class: testCases.RegisterPageTest</td>
-<td></td>
-<td>3</td>
-<td>testCases.RegisterPageTest@410954b</td></tr>
-<tr>
-<td title='testCases.HomePageTests.clickGetStartedButtonWithoutSignIn()'><b>clickGetStartedButtonWithoutSignIn</b><br>Test class: testCases.HomePageTests<br>Parameters: Queue</td>
+<td title='testCases.RegisterPageTest.checkUsernameLinkDisplayAtHomePageAfterRegister()'><b>checkUsernameLinkDisplayAtHomePageAfterRegister</b><br>Test class: testCases.RegisterPageTest</td>
 <td></td>
 <td>1</td>
-<td>testCases.HomePageTests@532721fd</td></tr>
+<td>testCases.RegisterPageTest@466cf502</td></tr>
 <tr>
-<td title='testCases.HomePageTests.clickGetStartedButtonWithoutSignIn()'><b>clickGetStartedButtonWithoutSignIn</b><br>Test class: testCases.HomePageTests<br>Parameters: Graph</td>
+<td title='testCases.HomePageTests.selectDataStructureDropdownTopicWithoutSignIn()'><b>selectDataStructureDropdownTopicWithoutSignIn</b><br>Test class: testCases.HomePageTests<br>Parameters: Graph</td>
+<td></td>
+<td>0</td>
+<td>testCases.HomePageTests@4d63b624</td></tr>
+<tr>
+<td title='testCases.HomePageTests.clickNumpyNinjaLinkFromTopicPagesAfterSignIn()'><b>clickNumpyNinjaLinkFromTopicPagesAfterSignIn</b><br>Test class: testCases.HomePageTests<br>Parameters: Tree</td>
 <td></td>
 <td>1</td>
-<td>testCases.HomePageTests@532721fd</td></tr>
+<td>testCases.HomePageTests@4d63b624</td></tr>
 <tr>
-<td title='testCases.HomePageTests.clickGetStartedButtonWithoutSignIn()'><b>clickGetStartedButtonWithoutSignIn</b><br>Test class: testCases.HomePageTests<br>Parameters: Array</td>
+<td title='testCases.HomePageTests.clickNumpyNinjaLinkFromSignInPage()'><b>clickNumpyNinjaLinkFromSignInPage</b><br>Test class: testCases.HomePageTests</td>
 <td></td>
-<td>1</td>
-<td>testCases.HomePageTests@532721fd</td></tr>
-<tr>
-<td title='testCases.SignInPagetest.checkValidAndInvalidLoginTest()'><b>checkValidAndInvalidLoginTest</b><br>Test class: testCases.SignInPagetest<br>Parameters: TestPro, ajm@123$, Valid</td>
-<td></td>
-<td>3</td>
-<td>testCases.SignInPagetest@7927bd9f</td></tr>
-<tr>
-<td title='testCases.SignInPagetest.checkValidAndInvalidLoginTest()'><b>checkValidAndInvalidLoginTest</b><br>Test class: testCases.SignInPagetest<br>Parameters: ninjanumpy, prot@34, Invalid</td>
-<td></td>
-<td>2</td>
-<td>testCases.SignInPagetest@7927bd9f</td></tr>
+<td>0</td>
+<td>testCases.HomePageTests@4d63b624</td></tr>
 <tr>
 <td title='testCases.HomePageTests.clickGetStartedButtonWithoutSignIn()'><b>clickGetStartedButtonWithoutSignIn</b><br>Test class: testCases.HomePageTests<br>Parameters: LinkedList</td>
 <td></td>
+<td>0</td>
+<td>testCases.HomePageTests@4d63b624</td></tr>
+<tr>
+<td title='testCases.RegisterPageTest.checkRegisterWithImproperPassword()'><b>checkRegisterWithImproperPassword</b><br>Test class: testCases.RegisterPageTest<br>Parameters: DiffPwdTrial, Password@143, Pdfgjjjjhjd@143, pwdMismatch</td>
+<td></td>
 <td>1</td>
-<td>testCases.HomePageTests@532721fd</td></tr>
+<td>testCases.RegisterPageTest@466cf502</td></tr>
 </table><p>
 </body>
 </html>

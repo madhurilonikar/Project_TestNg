@@ -10,12 +10,29 @@ public class GetStartedPage extends BasePage {
 		super(driver);
 	}
 
-	@FindBy (xpath="//button[normalize-space()='Get Started']")
-	private WebElement GetStartedBtn;
-	
-	
-	public void clickGetStartedSP() {
-		GetStartedBtn.click();
+	//-------------WebElements--------------
+		@FindBy (xpath="//button[normalize-space()='Get Started']")
+		private WebElement GetStartedBtn;
+		
+		@FindBy (xpath="//p[normalize-space()='Copyright@NumpyNinja2021']")
+		private WebElement NumpyNinjaCopyrightLink;
+		
+		
+		
+		//-----------Methods---------
+		
+		public void clickGetStartedSP() {
+			GetStartedBtn.click();
+		}
+			
+		public boolean copyrightDisplay() {
+		boolean displayed = NumpyNinjaCopyrightLink.isDisplayed();
+		return displayed;		
+		}
+		
+		public boolean checkStartPageDisplay() {
+		   boolean display = NumpyNinjaCopyrightLink.isDisplayed();
+			return display;
+		}
+		
 	}
-	
-}
