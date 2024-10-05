@@ -1,0 +1,1 @@
+{"uuid":"971e7072-c44d-49f9-9868-1327b7c2ac59","name":"factory.Hooks.setup","children":["ccfa17a4-302b-49c8-b89b-75d1ae98da68"],"description":"","befores":[{"name":"setup","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1728104552080,"stop":1728104554113}],"afters":[],"start":1728104552080,"stop":1728104554113}
