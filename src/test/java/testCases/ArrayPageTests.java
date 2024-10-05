@@ -82,79 +82,8 @@ public class ArrayPageTests extends BaseClass{
 
 	}
 
-	// ********* Arrays in Python Page Scenarios
 
-	@Test(priority = 4)
-	public void Test_TryHere_arraysInpython() {
-		HomePage Hp = new HomePage(BaseClass.getDriver());
-		Hp.Login_HomePage();
-		Hp.clickArrayGetStarted();
-		ArrayPage Ap = new ArrayPage(BaseClass.getDriver());
-		Ap.Click_ArraysInPython_Btn();
-		Ap.Click_TryhereBtn();
-		String CurURL = BaseClass.getDriver().getCurrentUrl();
-
-		Assert.assertEquals(true, CurURL.contains("tryEditor"));
-
-
-	}
-
-	@Test(priority = 5)
-	public void Test_ArraysInPython_EditorPage_ValidCodes() {
-
-		HomePage Hp = new HomePage(BaseClass.getDriver());
-		Hp.Login_HomePage();
-		Hp.clickArrayGetStarted();
-		ArrayPage Ap = new ArrayPage(BaseClass.getDriver());
-		Ap.Click_ArraysInPython_Btn();
-		DataStructurePage Dp = new DataStructurePage(BaseClass.getDriver());
-		Ap.Click_TryhereBtn();
-		Dp.Click_DS_PythonEditor_Runbtn_ValidCodes();
-		Dp.click_DS_PythonEditor_RunBtn();
-		Dp.validate_Console_Output();
-
-		logger.info("Console output.......     " + Dp.ConsoleOutput_text + Dp.PYEditor_Code);
-
-		Assert.assertEquals(true, Dp.PYEditor_Code.contains(Dp.ConsoleOutput_text));
-
-
-	}
-
-	@Test(priority = 6)
-	public void Test_ArraysInPython_EditorPage_InValidCodes() {
-		HomePage Hp = new HomePage(BaseClass.getDriver());
-		Hp.Login_HomePage();
-		Hp.clickArrayGetStarted();
-		ArrayPage Ap = new ArrayPage(BaseClass.getDriver());
-		Ap.Click_ArraysInPython_Btn();
-		Ap.Click_TryhereBtn();
-		DataStructurePage Dp = new DataStructurePage(BaseClass.getDriver());
-		Dp.Click_DS_PythonEditor_Runbtn_InValidCodes();
-		Dp.Validate_OutputConsole_InvalidCodes();
-		logger.info("Alert Message in Python Editor " + Dp.Alertmesg);
-
-		Assert.assertEquals(true, Dp.Alertmesg.contains("bad input on line 1"));
-
-
-	}
-
-	@Test(priority = 7)
-	public void Test_ArraysInPython_EditorPage_WithoutCodes() {
-		HomePage Hp = new HomePage(BaseClass.getDriver());
-		Hp.Login_HomePage();
-		Hp.clickArrayGetStarted();
-		ArrayPage Ap = new ArrayPage(BaseClass.getDriver());
-		Ap.Click_ArraysInPython_Btn();
-		DataStructurePage Dp = new DataStructurePage(BaseClass.getDriver());
-		Ap.Click_TryhereBtn();
-		Dp.Click_DS_PythonEditor_Runbtn_WithoutCodes();
-		String crntURL = BaseClass.getDriver().getCurrentUrl();
-		Assert.assertEquals(true, crntURL.contains("tryEditor"));
-	}
-
-	// Arrays using list page Scenarios
-
-	@Test(priority = 8)
+	@Test(priority =4 )
 	public void Test_TryHere_arraysUsingList() {
 		HomePage Hp = new HomePage(BaseClass.getDriver());
 		Hp.Login_HomePage();
@@ -168,64 +97,9 @@ public class ArrayPageTests extends BaseClass{
 
 
 	}
-
-	@Test(priority = 9)
-	public void Test_arraysUsingList_EditorPage_ValidCodes() {
-
-		HomePage Hp = new HomePage(BaseClass.getDriver());
-		Hp.Login_HomePage();
-		Hp.clickArrayGetStarted();
-		ArrayPage Ap = new ArrayPage(BaseClass.getDriver());
-		Ap.Click_ArraysUsingList_Btn();
-		DataStructurePage Dp = new DataStructurePage(BaseClass.getDriver());
-		Ap.Click_TryhereBtn();
-		Dp.Click_DS_PythonEditor_Runbtn_ValidCodes();
-		Dp.click_DS_PythonEditor_RunBtn();
-		Dp.validate_Console_Output();
-
-		logger.info("Console output.......     " + Dp.ConsoleOutput_text + Dp.PYEditor_Code);
-
-
-		Assert.assertEquals(true, Dp.PYEditor_Code.contains(Dp.ConsoleOutput_text));
-
-
-	}
-
-	@Test(priority = 10)
-	public void Test_arraysUsingList_EditorPage_InValidCodes() {
-		HomePage Hp = new HomePage(BaseClass.getDriver());
-		Hp.Login_HomePage();
-		Hp.clickArrayGetStarted();
-		ArrayPage Ap = new ArrayPage(BaseClass.getDriver());
-		Ap.Click_ArraysUsingList_Btn();
-		Ap.Click_TryhereBtn();
-		DataStructurePage Dp = new DataStructurePage(BaseClass.getDriver());
-		Dp.Click_DS_PythonEditor_Runbtn_InValidCodes();
-		Dp.Validate_OutputConsole_InvalidCodes();
-		logger.info("Alert Message in Python Editor " + Dp.Alertmesg);
-
-		Assert.assertEquals(true, Dp.Alertmesg.contains("bad input on line 1"));
-
-
-	}
-
-	@Test(priority = 11)
-	public void Test_arraysUsingList_EditorPage_WithoutCodes() {
-		HomePage Hp = new HomePage(BaseClass.getDriver());
-		Hp.Login_HomePage();
-		Hp.clickArrayGetStarted();
-		ArrayPage Ap = new ArrayPage(BaseClass.getDriver());
-		Ap.Click_ArraysUsingList_Btn();
-		DataStructurePage Dp = new DataStructurePage(BaseClass.getDriver());
-		Ap.Click_TryhereBtn();
-		Dp.Click_DS_PythonEditor_Runbtn_WithoutCodes();
-		String crntURL = BaseClass.getDriver().getCurrentUrl();
-		Assert.assertEquals(true, crntURL.contains("tryEditor"));
-	}
-
 	// Basic Operations Page Scenarios
 
-	@Test(priority = 12)
+	@Test(priority = 5)
 	public void Test_TryHere_basicOpeartions() {
 		HomePage Hp = new HomePage(BaseClass.getDriver());
 		Hp.Login_HomePage();
@@ -240,7 +114,7 @@ public class ArrayPageTests extends BaseClass{
 
 	}
 
-	@Test(priority = 13)
+	@Test(priority = 6)
 	public void Test_basicOpeartions_EditorPage_ValidCodes() {
 
 		HomePage Hp = new HomePage(BaseClass.getDriver());
@@ -261,7 +135,7 @@ public class ArrayPageTests extends BaseClass{
 
 	}
 
-	@Test(priority = 14)
+	@Test(priority = 7)
 	public void Test_basicOpeartions_EditorPage_InValidCodes() {
 		HomePage Hp = new HomePage(BaseClass.getDriver());
 		Hp.Login_HomePage();
@@ -279,7 +153,7 @@ public class ArrayPageTests extends BaseClass{
 
 	}
 
-	@Test(priority = 15)
+	@Test(priority = 8)
 	public void Test_basicOpeations_EditorPage_WithoutCodes() {
 		HomePage Hp = new HomePage(BaseClass.getDriver());
 		Hp.Login_HomePage();
@@ -295,7 +169,7 @@ public class ArrayPageTests extends BaseClass{
 
 	// Applications of array Page Scenarios
 
-	@Test(priority = 16)
+	@Test(priority = 9)
 	public void Test_TryHere_applicationsOfArray() {
 		HomePage Hp = new HomePage(BaseClass.getDriver());
 		Hp.Login_HomePage();
@@ -309,29 +183,7 @@ public class ArrayPageTests extends BaseClass{
 
 	}
 
-	@Test(priority = 17)
-	public void Test_applicationsOfArray_EditorPage_ValidCodes() {
-
-		HomePage Hp = new HomePage(BaseClass.getDriver());
-		Hp.Login_HomePage();
-		Hp.clickArrayGetStarted();
-		ArrayPage Ap = new ArrayPage(BaseClass.getDriver());
-		Ap.Click_ApplicationsOfArray_Btn();
-		DataStructurePage Dp = new DataStructurePage(BaseClass.getDriver());
-		Ap.Click_TryhereBtn();
-		Dp.Click_DS_PythonEditor_Runbtn_ValidCodes();
-		Dp.click_DS_PythonEditor_RunBtn();
-		Dp.validate_Console_Output();
-
-		logger.info("Console output.......     " + Dp.ConsoleOutput_text + Dp.PYEditor_Code);
-
-
-		Assert.assertEquals(true, Dp.PYEditor_Code.contains(Dp.ConsoleOutput_text));
-
-
-	}
-
-	@Test(priority = 18)
+		@Test(priority = 10)
 	public void Test_applicationsOfarray_EditorPage_InValidCodes() {
 		HomePage Hp = new HomePage(BaseClass.getDriver());
 		Hp.Login_HomePage();
@@ -348,23 +200,8 @@ public class ArrayPageTests extends BaseClass{
 
 	}
 
-	@Test(priority = 19)
-	public void Test_applicationsOfArray_EditorPage_WithoutCodes() {
-		HomePage Hp = new HomePage(BaseClass.getDriver());
-		Hp.Login_HomePage();
-		Hp.clickArrayGetStarted();
-		ArrayPage Ap = new ArrayPage(BaseClass.getDriver());
-		Ap.Click_ApplicationsOfArray_Btn();
-		DataStructurePage Dp = new DataStructurePage(BaseClass.getDriver());
-		Ap.Click_TryhereBtn();
-		Dp.Click_DS_PythonEditor_Runbtn_WithoutCodes();
-		String crntURL = BaseClass.getDriver().getCurrentUrl();
-		Assert.assertEquals(true, crntURL.contains("tryEditor"));
-	}
-
-	// ******* Left Panel links Scenarios
-
-	@Test(priority = 20)
+ 
+	@Test(priority = 11)
 	public void Test_LeftPanel_ArraysInPython() {
 		HomePage Hp = new HomePage(BaseClass.getDriver());
 		Hp.Login_HomePage();
@@ -379,7 +216,7 @@ public class ArrayPageTests extends BaseClass{
 
 	}
 
-	@Test(priority = 21)
+	@Test(priority = 12)
 	public void Test_LeftPanel_ArraysUsingList() {
 		HomePage Hp = new HomePage(BaseClass.getDriver());
 		Hp.Login_HomePage();
@@ -393,7 +230,7 @@ public class ArrayPageTests extends BaseClass{
 
 	}
 
-	@Test(priority = 22)
+	@Test(priority = 13)
 	public void Test_LeftPanel_BasicOperations() {
 		HomePage Hp = new HomePage(BaseClass.getDriver());
 		Hp.Login_HomePage();
@@ -407,7 +244,7 @@ public class ArrayPageTests extends BaseClass{
 
 	}
 
-	@Test(priority = 23)
+	@Test(priority = 14)
 	public void Test_LeftPanel_ApplicationsOfArray() {
 		HomePage Hp = new HomePage(BaseClass.getDriver());
 		Hp.Login_HomePage();
@@ -421,7 +258,7 @@ public class ArrayPageTests extends BaseClass{
 
 	}
 
-	@Test(priority = 24)
+	@Test(priority = 15)
 	public void Test_LeftPanel_PracticeQuestions() {
 		HomePage Hp = new HomePage(BaseClass.getDriver());
 		Hp.Login_HomePage();
@@ -436,253 +273,5 @@ public class ArrayPageTests extends BaseClass{
 	}	
 
 
-	/// Python Editor Search the array -> Valid and Invalid -->
-
-	@Parameters({ "1" })
-	@Test(priority = 25)
-	public void Test_searchTheArray_PythonEditor_ValidCodes(@Optional("1") String Rownumber) {
-
-		HomePage Hp = new HomePage(BaseClass.getDriver());
-		Hp.Login_HomePage();
-		Hp.clickArrayGetStarted();
-		ArrayPage Ap = new ArrayPage(BaseClass.getDriver());
-		Ap.Click_ArraysInPython_Btn();
-		Ap.Click_PracticeQuestion_Btn();
-		Ap.Click_SearchTheArray_Btn();
-		Ap.ExcelData_PythonEditor(Rownumber);
-		int index = Integer.parseInt(Rownumber) - 1;
-		String Output = datamap.get(index).get("Result");
-		String ConsoleResult = Ap.ConsoleOutput.getText();
-		logger.info("Sheet Result..> " + Output + ",Console Output:" + ConsoleResult);
-		Assert.assertEquals(true, ConsoleResult.contains(Output));
-
-	}
-
-	@Parameters({ "2" })
-	@Test(priority = 26)
-	public void Test_searchTheArray_PythonEditor_InValidCodes(@Optional("2") String Rownumber) {
-
-		HomePage Hp = new HomePage(BaseClass.getDriver());
-		Hp.Login_HomePage();
-		Hp.clickArrayGetStarted();
-		ArrayPage Ap = new ArrayPage(BaseClass.getDriver());
-		Ap.Click_ArraysInPython_Btn();
-		Ap.Click_PracticeQuestion_Btn();
-		Ap.Click_SearchTheArray_Btn();
-		Ap.ExcelData_PythonEditor(Rownumber);
-		int index = Integer.parseInt(Rownumber) - 1;
-		String ExcelOutput = datamap.get(index).get("Result");
-		Alert alert = BaseClass.getDriver().switchTo().alert();
-		AlertMessage = alert.getText();
-		Assert.assertEquals(true, AlertMessage.contains(ExcelOutput));
-		logger.info("Alert Message ... > " + AlertMessage);
-	}
-
-	// Python Editor Max Consecutive one Page -> Valid and Invalid
-
-	@Parameters({ "3" })
-	@Test(priority = 27)
-	public void Test_Maxconsectutive_PythonEditor_ValidCodes(@Optional("3") String Rownumber) {
-		HomePage Hp = new HomePage(BaseClass.getDriver());
-		Hp.Login_HomePage();
-		Hp.clickArrayGetStarted();
-		ArrayPage Ap = new ArrayPage(BaseClass.getDriver());
-		Ap.Click_ArraysInPython_Btn();
-		Ap.Click_PracticeQuestion_Btn();
-		Ap.Click_MaxConsecutive_Btn();
-		Ap.ExcelData_PythonEditor(Rownumber);
-		int index = Integer.parseInt(Rownumber) - 1;
-		String Output = datamap.get(index).get("Result");
-		String ConsoleResult = Ap.ConsoleOutput.getText();
-		logger.info("Sheet Result..> " + Output + ",Console Output:" + ConsoleResult);
-		Assert.assertEquals(true, ConsoleResult.contains(Output));
-	}
-
-	@Parameters({ "4" })
-	@Test(priority = 28)
-	public void Test_Maxconsectutive_PythonEditor_InValidCodes(@Optional("4") String Rownumber) {
-		HomePage Hp = new HomePage(BaseClass.getDriver());
-		Hp.Login_HomePage();
-		Hp.clickArrayGetStarted();
-		ArrayPage Ap = new ArrayPage(BaseClass.getDriver());
-		Ap.Click_ArraysInPython_Btn();
-		Ap.Click_PracticeQuestion_Btn();
-		Ap.Click_MaxConsecutive_Btn();
-		Ap.ExcelData_PythonEditor(Rownumber);
-		int index = Integer.parseInt(Rownumber) - 1;
-		String ExcelOutput = datamap.get(index).get("Result");
-		Alert alert = BaseClass.getDriver().switchTo().alert();
-		AlertMessage = alert.getText();
-		Assert.assertEquals(true, AlertMessage.contains(ExcelOutput));
-		logger.info("Alert Message ... > " + AlertMessage);
-
-	}
-
-
-	// ******** Python Editor Find Numbers with Even number of digits -> Valid and  Invalid
 	
-
-
-	@Parameters({ "5" })
-	@Test(priority = 29)
-	public void Test_EvenNumbers_PythonEditor_ValidCodes(@Optional("5") String Rownumber) {
-		HomePage Hp = new HomePage(BaseClass.getDriver());
-		Hp.Login_HomePage();
-		Hp.clickArrayGetStarted();
-		ArrayPage Ap = new ArrayPage(BaseClass.getDriver());
-		Ap.Click_ArraysInPython_Btn();
-		Ap.Click_PracticeQuestion_Btn();
-		Ap.Click_EvenNumberQuestion_Btn();
-		Ap.ExcelData_PythonEditor(Rownumber);
-		int index = Integer.parseInt(Rownumber) - 1;
-		String Output = datamap.get(index).get("Result");
-		String ConsoleResult = Ap.ConsoleOutput.getText();
-		logger.info("Sheet Result..> " + Output + ",Console Output:" + ConsoleResult);
-		Assert.assertEquals(true, ConsoleResult.contains(Output));
-	}
-
-	@Parameters({ "6" })
-	@Test(priority = 30)
-	public void Test_EvenNumbers_PythonEditor_InValidCodes(@Optional("6") String Rownumber) {
-		HomePage Hp = new HomePage(BaseClass.getDriver());
-		Hp.Login_HomePage();
-		Hp.clickArrayGetStarted();
-		ArrayPage Ap = new ArrayPage(BaseClass.getDriver());
-		Ap.Click_ArraysInPython_Btn();
-		Ap.Click_PracticeQuestion_Btn();
-		Ap.Click_EvenNumberQuestion_Btn();
-		Ap.ExcelData_PythonEditor(Rownumber);
-		int index = Integer.parseInt(Rownumber) - 1;
-		String ExcelOutput = datamap.get(index).get("Result");
-		Alert alert = BaseClass.getDriver().switchTo().alert();
-		AlertMessage = alert.getText();
-		Assert.assertEquals(true, AlertMessage.contains(ExcelOutput));
-		logger.info("Alert Message ... > " + AlertMessage);
-	}
-
-	// Python Editor Squares of Sorted array -> Valid and Invalid
-
-	@Parameters({ "7" })
-	@Test(priority = 31)
-	public void Test_SortedSquares_PythonEditor_ValidCodes(@Optional("7") String Rownumber) {
-		HomePage Hp = new HomePage(BaseClass.getDriver());
-		Hp.Login_HomePage();
-		Hp.clickArrayGetStarted();
-		ArrayPage Ap = new ArrayPage(BaseClass.getDriver());
-		Ap.Click_ArraysInPython_Btn();
-		Ap.Click_PracticeQuestion_Btn();
-		Ap.Click_SortedSquared_Ctn();
-		Ap.ExcelData_PythonEditor(Rownumber);
-		int index = Integer.parseInt(Rownumber) - 1;
-		String Output = datamap.get(index).get("Result");
-		String ConsoleResult = Ap.ConsoleOutput.getText();
-		logger.info("Sheet Result..> " + Output + ",Console Output:" + ConsoleResult);
-		Assert.assertEquals(true, ConsoleResult.contains(Output));
-	}
-
-	@Parameters({ "8" })
-	@Test(priority = 32)
-	public void Test_SortedSquares_PythonEditor_InValidCodes(@Optional("8") String Rownumber) {
-		HomePage Hp = new HomePage(BaseClass.getDriver());
-		Hp.Login_HomePage();
-		Hp.clickArrayGetStarted();
-		ArrayPage Ap = new ArrayPage(BaseClass.getDriver());
-		Ap.Click_ArraysInPython_Btn();
-		Ap.Click_PracticeQuestion_Btn();
-		Ap.Click_SortedSquared_Ctn();
-		Ap.ExcelData_PythonEditor(Rownumber);
-		int index = Integer.parseInt(Rownumber) - 1;
-		String ExcelOutput = datamap.get(index).get("Result");
-		Alert alert = BaseClass.getDriver().switchTo().alert();
-		AlertMessage = alert.getText();
-		Assert.assertEquals(true, AlertMessage.contains(ExcelOutput));
-		logger.info("Alert Message ... > " + AlertMessage);
-	}
-
-	// Search the array ->Submit button # Negative Scenario --> It will fail --> Bug
-
-	@Parameters({ "9" })
-	@Test(priority = 33)
-	public void Test_searchThearray_PythonEditor_ValidCodes_SubmitBtn(@Optional("9") String Rownumber) {
-
-		HomePage Hp = new HomePage(BaseClass.getDriver());
-		Hp.Login_HomePage();
-		Hp.clickArrayGetStarted();
-		ArrayPage Ap = new ArrayPage(BaseClass.getDriver());
-		Ap.Click_ArraysInPython_Btn();
-		Ap.Click_PracticeQuestion_Btn();
-		Ap.Click_SearchTheArray_Btn();
-		Ap.Click_Submit_Btn_ExcelData_ValidCodes(Rownumber);
-		int index = Integer.parseInt(Rownumber) - 1;
-		String Output = datamap.get(index).get("Result");
-		String ConsoleResult = Ap.ConsoleOutput.getText();
-		logger.info("Sheet Result..> " + Output + ",Console Output:" + ConsoleResult);
-		Assert.assertEquals(true, ConsoleResult.contains(Output));
-	}
-
-	// Testing the Submit button with valid codes in Max Consecutive one Page Python
-	// Editor
-
-	@Parameters({ "10" })
-	@Test(priority = 34)
-	public void Test_MaxConsecutive_PythonEditor_ValidCodes_SubmitBtn(@Optional("10") String Rownumber) {
-
-		HomePage Hp = new HomePage(BaseClass.getDriver());
-		Hp.Login_HomePage();
-		Hp.clickArrayGetStarted();
-		ArrayPage Ap = new ArrayPage(BaseClass.getDriver());
-		Ap.Click_ArraysInPython_Btn();
-		Ap.Click_PracticeQuestion_Btn();
-		Ap.Click_MaxConsecutive_Btn();
-		Ap.Click_Submit_Btn_ExcelData_ValidCodes(Rownumber);
-		int index = Integer.parseInt(Rownumber) - 1;
-		String Output = datamap.get(index).get("Result");
-		String ConsoleResult = Ap.ConsoleOutput.getText();
-		logger.info("Sheet Result..> " + Output + ",Console Output:" + ConsoleResult);
-		Assert.assertEquals(true, ConsoleResult.contains(Output));
-	}
-
-	// Testing the Submit button with valid codes in Find Numbers with Even number of digits question page Python Editor
-	@Parameters({ "11" })
-	@Test(priority = 35)
-	public void Test_evenNumbers_PythonEditor_ValidCodes_SubmitBtn(@Optional("11") String Rownumber) {
-		HomePage Hp = new HomePage(BaseClass.getDriver());
-		Hp.Login_HomePage();
-		Hp.clickArrayGetStarted();
-		ArrayPage Ap = new ArrayPage(BaseClass.getDriver());
-		Ap.Click_ArraysInPython_Btn();
-		Ap.Click_PracticeQuestion_Btn();
-		Ap.Click_EvenNumberQuestion_Btn();
-		Ap.Click_Submit_Btn_ExcelData_ValidCodes(Rownumber);
-		int index = Integer.parseInt(Rownumber) - 1;
-		String Output = datamap.get(index).get("Result");
-		String ConsoleResult = Ap.ConsoleOutput.getText();
-		logger.info("Sheet Result..> " + Output + ",Console Output:" + ConsoleResult);
-		Assert.assertEquals(true, ConsoleResult.contains(Output));
-	}
-
-	// Testing the Submit button valid codes in Squares of a Sorted Array
-
-	@Parameters({ "12" })
-	@Test(priority = 36)
-	public void Test_sortedSquares_PythonEditor_ValidCodes_SubmitBtn(@Optional("12") String rownumber) {
-
-		HomePage Hp = new HomePage(BaseClass.getDriver());
-		Hp.Login_HomePage();
-		Hp.clickArrayGetStarted();
-		ArrayPage Ap = new ArrayPage(BaseClass.getDriver());
-		Ap.Click_ArraysInPython_Btn();
-		Ap.Click_PracticeQuestion_Btn();
-		Ap.Click_SortedSquared_Ctn();
-		Ap.Click_Submit_Btn_ExcelData_ValidCodes(rownumber);
-		int index = Integer.parseInt(rownumber) - 1;
-		String Output = datamap.get(index).get("Result");
-		String ConsoleResult = Ap.ConsoleOutput.getText();
-		logger.info("Sheet Result..> " + Output + ",Console Output:" + ConsoleResult);
-		Assert.assertEquals(true, ConsoleResult.contains(Output));
-
-	}
-
-
-
 }
