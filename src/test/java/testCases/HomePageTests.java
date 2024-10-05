@@ -78,31 +78,8 @@ public class HomePageTests extends Hooks{
 			Assert.assertTrue(status);				
 		   }
 		
-		@Test (priority=6, groups ={"regression","NumpyNinja"})
-		public void clickNumpyNinjaLinkFromHomePagesBeforeSignIn() {
-			logger.info("Clicking NumpyNinja link from Home page without signing in....");
-			GetStartedPage sp = new GetStartedPage(BaseClass.getDriver());
-			sp.clickGetStartedSP();
-			logger.info("The Start page should be displayed.............");
-			HomePage hp = new HomePage(BaseClass.getDriver());
-			hp.clickNumpyNinjaLink();
-			boolean status = sp.copyrightDisplay();
-			Assert.assertTrue(status);				
-		}
-		
-		@Test (priority=7, groups ={"regression","NumpyNinja"})
-		public void clickNumpyNinjaLinkFromHomePagesAfterSignIn() {
-			logger.info("Clicking NumpyNinja link from Home page AFTER signing in....");
-			HomePage hp = new HomePage(BaseClass.getDriver());
-			hp.Login_HomePage();
-	    	logger.info("The Start page should be displayed...............");
-			hp.clickNumpyNinjaLink();
-			GetStartedPage sp = new GetStartedPage(BaseClass.getDriver());
-			boolean status = sp.checkStartPageDisplay();
-			Assert.assertTrue(status);				
-		}
-		
-		@Test (priority=8, groups ="regression")
+
+		@Test (priority=6, groups ="regression")
 		public void clickNumpyNinjaLinkFromSignInPage() {
 			  logger.info("Clicking NumpyNinja link from SignIn Page........");
 			  GetStartedPage gsp = new GetStartedPage(BaseClass.getDriver());
@@ -115,7 +92,7 @@ public class HomePageTests extends Hooks{
 			  Assert.assertTrue(status);						
 		}
 			
-		@Test (priority=9, groups ="regression")
+		@Test (priority=7, groups ="regression")
 		public void clickNumpyNinjaLinkFromRegisterPage() {
 			  logger.info("Clicking NumpyNinja link from Register Page........");
 			  GetStartedPage gsp = new GetStartedPage(BaseClass.getDriver());

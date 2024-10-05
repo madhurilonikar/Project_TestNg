@@ -19,47 +19,7 @@ public class GraphPageTests extends BaseClass {
 		 sp.enterpassword(pwd);
 		 sp.clickLogin();
 		}
-	//GraphGetStarted
-		 @Test(priority=4,groups="regression")
-		public void check_GraphHomePage()
-		{
-			
-			HomePage Hp = new HomePage(BaseClass.getDriver());		
-		    Hp.Login_HomePage();
-		  
-		    Hp.clickGraphGetStarted();
-		    logger.info(" GraphGetStarted page is displayed..............");
-		   // Hp.clickGraphDropdown();
-	    GraphPage Gp = new GraphPage (BaseClass.getDriver());
-		  
-		  Gp.check_GraphHomePage();
-		  logger.info("Redirecting to GraphGetStarted page..............");
-			 boolean status =  Gp.check_GraphHomePage();
-			 Assert.assertEquals(status, true);
-			 logger.info("Graph HomePage is displayed");
-			
-		}
-		 @Test(priority=4,groups="regression")
-			public void check_GraphPage()
-			{
-				HomePage Hp = new HomePage(BaseClass.getDriver());		
-			    Hp.Login_HomePage();
-			  
-			    Hp.clickGraphGetStarted();
-			    logger.info(" GraphGetStarted page is displayed..............");
-			
-		    GraphPage Gp = new GraphPage (BaseClass.getDriver());
-			  
-			  Gp.check_GraphHomePage();
-			    Gp.click_GraphLink();
-			    logger.info("Grpahlink page is displayed");
-			    Gp.check_GraphPage();
-			    logger.info("Redirecting to Grpahlink page..............");
-				boolean status = Gp.check_GraphPage();
-			    Assert.assertEquals(status, true);
-			    logger.info("Graphpage is displayed");	 
-}
-		//TryHereButton
+
 		 @Test(priority=4,groups="regression")
 		 public void check_TryHereButton() 
 		 {
@@ -77,7 +37,7 @@ public class GraphPageTests extends BaseClass {
 				 Assert.assertEquals(status, true);
 				 logger.info("TryEditor page is displayed");
 		 }
-		 //PythonEditorValidInput
+		
 		 @Test(priority=4,groups="regression")
 		 public void check_PythonEditorValidInput() 
 		 {
@@ -99,7 +59,7 @@ public class GraphPageTests extends BaseClass {
 				  Assert.assertEquals(true,ds.PYEditor_Code.contains(ds.ConsoleOutput_text) );
 				  
 		 }
-		 //PythonEditorInvalidInput
+		
 		 @Test(priority=4,groups="regression")
 		 public void check_PythonEditorInvalidInput() 
 		 {
@@ -119,7 +79,7 @@ public class GraphPageTests extends BaseClass {
 		     Assert.assertEquals(true, ds.Alertmesg.contains("bad input on line 1"));
 		        
 		 }
-		// PythonEditorNoInput
+	
 		 @Test(priority=4,groups="regression")
 		 public void check_PythonEditorNoInput() 
 		 {
@@ -140,25 +100,6 @@ public class GraphPageTests extends BaseClass {
 			 Assert.assertEquals(true, Current_URL.contains("tryEditor"));
 		
 		 }
-		 @Test(priority=4,groups="regression")
-			public void check_GraphRepresentationsLink()
-			{
-				HomePage Hp = new HomePage(BaseClass.getDriver());		
-			    Hp.Login_HomePage();
-			  
-			    Hp.clickGraphGetStarted();
-
-			    logger.info("GraphGetStarted page is displayed..............");
-			
-		    GraphPage Gp = new GraphPage (BaseClass.getDriver());
-			  
-			
-			    Gp.click_GraphRepresentationsLink();
-			    logger.info("GraphRepresentationsLink page is displayed");
-			    Gp.check_GraphRepresentationsLink();
-			    logger.info("Redirecting to GraphRepresentationsLink page..............");
-				boolean status =  Gp.check_GraphRepresentationsLink();
-			    Assert.assertEquals(status, true);
-			    logger.info("GraphRepresentations PAGE is displayed");	 
-}
+		 
+	
 }

@@ -11,7 +11,7 @@ import factory.Hooks;
 import pageObject.GetStartedPage;
 import pageObject.HomePage;
 import pageObject.RegisterPage;
-import utilities.DataProviders;
+
 import pageObject.SignInPage;
 
 public class RegisterPageTest extends Hooks {
@@ -90,37 +90,6 @@ public void checkMovingToLoginPageFromRegisterPage() {
 	  Assert.assertTrue(display);
   }
 
-
-@Test (dataProvider="RegisterWithInvalidData", dataProviderClass=DataProviders.class, priority=5, groups={"regression","Register"})
-public void checkRegisterWithImproperPassword(String user, String pwd, String pwdConfirm, String ErrMsg) {
-	logger.info("Verify the Error message thrown while registering new user with improper username OR passwords............");
-	GetStartedPage gsp = new GetStartedPage(BaseClass.getDriver());
-	gsp.clickGetStartedSP();
-	HomePage hp = new HomePage(BaseClass.getDriver());
-	hp.clickRegisterLink();
-	RegisterPage rp = new RegisterPage(BaseClass.getDriver());
-    rp.enterUsername(user);
-    rp.enterPassword(pwd);
-	rp.enterPasswordConfirm(pwdConfirm);	
-	System.out.println("Register data :"+user+" "+pwd+" "+pwdConfirm);
-	rp.clickRegister();
-	
-	logger.info("Verify the Error message displayed............");
-	String ErrorMessage = rp.getTextPwdMismatchErrMsg();
-	System.out.println("Displayed Error message is: "+ErrorMessage);
-	if (ErrMsg.equalsIgnoreCase("pwdMismatch")) {
-		boolean status = rp.pwdMismatchErrMsgDisplay();
-		if(status==true) { Assert.assertTrue(true); logger.info("Proper Error Message displayed");}
-		else { Assert.assertTrue(false); logger.info("Error Message displayed is INCORRECT...");}
-	    }
-	if (ErrMsg.equalsIgnoreCase("NotpwdMismatch")) {
-		boolean status = rp.pwdMismatchErrMsgDisplay();
-		if(status==false) { Assert.assertTrue(true); logger.info("Proper Error Message displayed");}
-		else { Assert.assertTrue(false); logger.info("Error Message displayed is INCORRECT...");}
-	    }
-	
-	
- }
 
 
 

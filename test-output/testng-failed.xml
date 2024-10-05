@@ -4,49 +4,21 @@
   <test thread-count="5" parallel="methods" name="Test(failed)">
     <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="testCases.RegisterPageTest">
-        <methods>
-          <include name="tearDown"/>
-          <include name="checkRegisterWithImproperPassword" invocation-numbers="1 2 3 4"/>
-          <include name="setup"/>
-        </methods>
-      </class> <!-- testCases.RegisterPageTest -->
       <class name="testCases.GraphPageTests">
         <methods>
           <include name="check_TryHereButton"/>
           <include name="check_PythonEditorNoInput"/>
           <include name="check_PythonEditorInvalidInput"/>
-          <include name="check_GraphRepresentationsLink"/>
           <include name="check_PythonEditorValidInput"/>
-          <include name="check_GraphPage"/>
-          <include name="check_GraphHomePage"/>
         </methods>
       </class> <!-- testCases.GraphPageTests -->
-      <class name="testCases.HomePageTests">
-        <methods>
-          <include name="clickNumpyNinjaLinkFromHomePagesBeforeSignIn"/>
-          <include name="tearDown"/>
-          <include name="clickNumpyNinjaLinkFromHomePagesAfterSignIn"/>
-          <include name="setup"/>
-        </methods>
-      </class> <!-- testCases.HomePageTests -->
-      <class name="testCases.SignInPagetest">
-        <methods>
-          <include name="checkUsernameDisplayAfterLogin"/>
-          <include name="tearDown"/>
-          <include name="setup"/>
-        </methods>
-      </class> <!-- testCases.SignInPagetest -->
       <class name="testCases.DS_IntroductionTests">
         <methods>
           <include name="Test_DS_TimeComplexity_Practice_Questions_link"/>
           <include name="Test_DS_TryHere"/>
           <include name="Test_DS_TimeComplexityLink"/>
           <include name="Test_LeftPanel_TimeComplexity"/>
-          <include name="DS_PythonEditor_InValidCodes"/>
-          <include name="DS_PythonEditor_ValidCodes"/>
           <include name="DS_TimeComplexity_SignOutBtn"/>
-          <include name="DS_PythonEditor_WithoutCodes"/>
         </methods>
       </class> <!-- testCases.DS_IntroductionTests -->
       <class name="testCases.ArrayPageTests">
@@ -65,19 +37,19 @@
           <include name="Test_EvenNumbers_PythonEditor_ValidCodes" invocation-numbers="0"/>
           <include name="Test_TryHere_applicationsOfArray"/>
           <include name="Test_searchTheArray_PythonEditor_InValidCodes" invocation-numbers="0"/>
-          <include name="Test_basicOpeations_EditorPage_WithoutCodes"/>
           <include name="Test_sortedSquares_PythonEditor_ValidCodes_SubmitBtn" invocation-numbers="0"/>
-          <include name="Test_TryHere_arraysUsingList"/>
+          <include name="Test_basicOpeations_EditorPage_WithoutCodes"/>
           <include name="Test_basicOpeartions_EditorPage_InValidCodes"/>
-          <include name="Test_searchTheArray_PythonEditor_ValidCodes" invocation-numbers="0"/>
-          <include name="Test_EvenNumbers_PythonEditor_InValidCodes" invocation-numbers="0"/>
+          <include name="Test_TryHere_arraysUsingList"/>
           <include name="Test_arraysUsingList_EditorPage_ValidCodes"/>
+          <include name="Test_EvenNumbers_PythonEditor_InValidCodes" invocation-numbers="0"/>
+          <include name="Test_searchTheArray_PythonEditor_ValidCodes" invocation-numbers="0"/>
           <include name="Test_searchThearray_PythonEditor_ValidCodes_SubmitBtn" invocation-numbers="0"/>
           <include name="Test_LeftPanel_BasicOperations"/>
-          <include name="Test_SortedSquares_PythonEditor_InValidCodes" invocation-numbers="0"/>
-          <include name="Test_LeftPanel_ArraysUsingList"/>
-          <include name="Test_applicationsOfArray_EditorPage_WithoutCodes"/>
           <include name="Test_applicationsOfArray_EditorPage_ValidCodes"/>
+          <include name="Test_SortedSquares_PythonEditor_InValidCodes" invocation-numbers="0"/>
+          <include name="Test_applicationsOfArray_EditorPage_WithoutCodes"/>
+          <include name="Test_LeftPanel_ArraysUsingList"/>
           <include name="Test_TryHere_arraysInpython"/>
           <include name="Test_evenNumbers_PythonEditor_ValidCodes_SubmitBtn" invocation-numbers="0"/>
           <include name="Test_ArraysInPython_EditorPage_WithoutCodes"/>

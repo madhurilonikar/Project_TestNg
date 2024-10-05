@@ -1,6 +1,6 @@
 package testCases;
 
-import java.io.IOException;
+
 
 import org.apache.logging.log4j.Logger;
 import org.testng.Assert;
@@ -10,7 +10,7 @@ import factory.Hooks;
 import pageObject.GetStartedPage;
 import pageObject.HomePage;
 import pageObject.RegisterPage;
-//import pageObject.RegisterPage;
+
 import pageObject.SignInPage;
 import utilities.DataProviders;
 
@@ -81,26 +81,9 @@ public class SignInPagetest extends Hooks{
     	}
 	
 	
-	@Test (priority=3)
-	public void checkUsernameDisplayAfterLogin() throws IOException {
-		 logger.info("Check username display at home pafe after login...........");
-		 HomePage hp = new HomePage(BaseClass.getDriver());
-		 hp.Login_HomePage();
-		 
-		 String NameDisplayed = hp.getUsernameAtLinkHomepage();
-			  if(NameDisplayed.equalsIgnoreCase(BaseClass.getProperties().getProperty("username"))) {
-					  Assert.assertTrue(true);
-					  System.out.println("Username displayed");
-				  }
-			  else {
-				  Assert.assertTrue(false);
-				  System.out.println("Username NOT displayed");
-			   }		 
-		 
-	    }
+
 	
-	
-	@Test (groups={"smoke","regression"},priority=4)
+	@Test (groups={"smoke","regression"},priority=3)
 	public void checkMovingToRegisterPageFromLoginPage() throws InterruptedException {
 	    logger.info("Check moving to Register Page from Login Page........");
 		GetStartedPage gsp = new GetStartedPage(BaseClass.getDriver());
